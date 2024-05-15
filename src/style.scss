@@ -1,0 +1,42 @@
+$base-color: #ffa800;
+$secondar-color: #AD7200;
+$background-color: #000000;
+#contentTotal{
+    background-color: $background-color;
+    padding: 0.5rem 3rem;
+}
+.contentor{
+    padding: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact{
+    border: 0.2rem solid $base-color;
+    padding: 1rem;
+    // border-radius: 80%;
+}
+.tagsAssunto{
+    color: $base-color;
+}
+.imgSkills{
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid $base-color;
+    padding: 0.2rem;
+    margin: 0.7rem;
+    border-radius: 20%;
+    background-color: $base-color;
+}
+#titulo{
+    padding: 0rem;
+}
+.footer{
+    display: flex;
+    padding: 1rem;
+    background-color: $base-color;
+    color: black;
+    justify-content: center;
+}
+#imgfooter{
+    width: 8rem;
+    margin: 0.2rem;
+}

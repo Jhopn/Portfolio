@@ -1,0 +1,23 @@
+.perfilConfig{
+  display: inline-block;
+  margin-right: 8rem;
+}
+.logosContatos{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.perfilFoto{
+  height: 20em;
+  padding: 1.5em;
+  border-radius: 3rem;
+}
+.logo {
+  height: 0.9em;
+  padding: 1em;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+}
