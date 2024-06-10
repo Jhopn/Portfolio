@@ -21,3 +21,22 @@
   justify-content: center;
   padding: 8rem;
 }
+
+@media  (max-width: 500px) {
+  .container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .perfilConfig{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .logosContatos{
+    justify-content: space-evenly;
+  }
+}

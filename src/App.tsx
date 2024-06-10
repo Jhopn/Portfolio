@@ -1,4 +1,4 @@
-import perfil from './assets/perfil.jpg'
+import perfil from './assets/perfil2.jpg'
 import linkedinLogo from "./assets/ri_linkedin-fill.png"
 import instaLogo from "./assets/bi_instagram.png"
 import cssLogo from './assets/akar-icons--css-fill.png'
@@ -10,6 +10,7 @@ import reactLogo from './assets/uil--react.png'
 import javascriptLogo from './assets/ri--javascript-fill.png'
 import './App.css'
 import './style.scss'
+import { GitStatus, GitLanguages }from './services/statusGit.tsx';
 
 function App() {
   return (
@@ -31,19 +32,43 @@ function App() {
 
           </div>
 
-          <p className='contact'>Hire me</p>
+          <a href="">
+            <div className='contact'>
+              <p id='hireme'>
+                Contate-me
+              </p>
+            </div>
+          </a>
+          
 
         </div>
         <div className='contentor'>
-          <p className='tagsAssunto'>Olá, eu sou o</p>
-          <h1 id='titulo'>Jhoão Pedro, desenvolvedor Full Stack, contruo sites e aplicativos mobile</h1>
 
+
+          <p className='tagsAssunto'>Olá, eu sou o</p>
+          <h1 id='titulo'>Jhoão Pedro, desenvolvedor Full Stack, desenvolvo sites e aplicativos.</h1>
+          <p>Sou estudante de Sistema para Internet no IFMA Campus Timon e participo da Developer Community em seus principais projetos.</p>
+
+          <div id='respositorioStatus'>
+            <p>Repositorios no Git Hub: </p>
+            <p id='respositorioQuant'>
+              <GitStatus/>
+            </p>
+          </div>
+
+          
           <p className='tagsAssunto'>About</p>
-          <h4>Sou aluno de Sistema para a Internet e a minha jornada se iniciou com projetos pessoais, mas quero ir além e tenho habilidades que podem me ajudar a alcançar esse objetivo.</h4>
+          <p>Sou aluno de Sistema para a Internet e a minha jornada se iniciou com projetos pessoais, mas quero ir além e tenho habilidades que podem me ajudar a alcançar esse objetivo.</p>
+
+
+          <div>
+            <p>Linguagens desses Repositorios: </p>
+            <GitLanguages/>
+          </div>
 
           <p className='tagsAssunto'>Career</p>
           <p className='tagsAssunto'>Skills</p>
-          <h4>Possuo habilidades em frontend e em backend</h4>
+          <p>Possuo habilidades em frontend e em backend, segue a baixo as ferramentas das quais já usei</p>
           <div className='contentSkills'>
             <img className='imgSkills' src={cssLogo} alt="" />
             <img className='imgSkills' src={htmlLogo} alt="" />
@@ -55,10 +80,23 @@ function App() {
           </div>
 
           <p className='tagsAssunto'>Portfolio</p>
-          <h4>Projetos no qual já participei</h4>
+          <p>Projetos no qual já participei</p>
           
 
           <p className='tagsAssunto'>Contact</p>
+
+          <div className='entreEmContatos'>
+            <p>Vamos trabalhar juntos!</p>
+            <input type="text" name="" id="" />
+            <br />
+            <input type="text" name="" id="" />
+            <br />
+            <input type="text" name="" id="" />
+            <br />
+            <input type="text" name="" id="" />
+            <br />
+            <button>Send</button>
+          </div>
 
 
         </div>
@@ -70,6 +108,12 @@ function App() {
       <footer className='footer'>
         <img id='imgfooter' src="./src/assets/logo-jhopn (2).png" alt="" />
         <p>Jhopn ©</p>
+
+        <p>Contatos</p>
+        <a href="">Github</a>
+        <a href="">Linkedin</a>
+        <a href="">Instagram</a>
+        <a href="">Email</a>
       </footer>
     </>
   )
