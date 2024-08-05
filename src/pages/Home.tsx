@@ -14,7 +14,7 @@ import '../styles/App.css';
 import '../styles/style.scss';
 // import { GitStatus } from '../services/statusGit.tsx';
 // import { Chart } from "react-google-charts";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import image1 from "../assets/Carrosel/gojo.jpg";
 import image2 from "../assets/Carrosel/gojo2.jfif";
 import '@fontsource/roboto/300.css';
@@ -23,11 +23,11 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {  useNavigate } from 'react-router-dom';
 
-const images = [image1, image2];
+// const images = [image1, image2];
 
 function Home() {
   const carousel = useRef<HTMLDivElement>(null); 
-  const [width, setWidth] = useState(0);
+//   const [width, setWidth] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
