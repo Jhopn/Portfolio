@@ -26,7 +26,7 @@ import {  useNavigate } from 'react-router-dom';
 // const images = [image1, image2];
 
 function Home() {
-  const carousel = useRef<HTMLDivElement>(null); 
+//   const carousel = useRef<HTMLDivElement>(null); 
 //   const [width, setWidth] = useState(0);
   const navigate = useNavigate();
 
