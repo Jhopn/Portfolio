@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+// import { useState, useEffect, useRef } from 'react';
 import perfil from '../assets/perfil2.jpg';
 import linkedinLogo from "../assets/ri_linkedin-fill.png";
 import instaLogo from "../assets/bi_instagram.png";
