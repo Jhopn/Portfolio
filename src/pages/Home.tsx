@@ -30,12 +30,12 @@ function Home() {
 //   const [width, setWidth] = useState(0);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (carousel.current) {
-      console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }
-  }, []);
+//   useEffect(() => {
+//     if (carousel.current) {
+//       console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+//       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+//     }
+//   }, []);
 
   return (
     <>
