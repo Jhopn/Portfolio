@@ -25,7 +25,7 @@ import {  useNavigate } from 'react-router-dom';
 
 const images = [image1, image2];
 
-function App() {
+function Home() {
   const carousel = useRef<HTMLDivElement>(null); 
   const [width, setWidth] = useState(0);
   const navigate = useNavigate();
@@ -150,4 +150,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
