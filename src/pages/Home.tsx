@@ -1,4 +1,3 @@
-// import { useState, useEffect, useRef } from 'react';
 import perfil from '../assets/perfil2.jpg';
 import linkedinLogo from "../assets/ri_linkedin-fill.png";
 import instaLogo from "../assets/bi_instagram.png";
@@ -17,25 +16,12 @@ import '../styles/style.scss';
 // import { motion } from "framer-motion";
 // import image1 from "../assets/Carrosel/gojo.jpg";
 // import image2 from "../assets/Carrosel/gojo2.jfif";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import {  useNavigate } from 'react-router-dom';
 
-// const images = [image1, image2];
 
 function Home() {
-//   const carousel = useRef<HTMLDivElement>(null); 
-//   const [width, setWidth] = useState(0);
   const navigate = useNavigate();
 
-//   useEffect(() => {
-//     if (carousel.current) {
-//       console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
-//       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-//     }
-//   }, []);
 
   return (
     <>
@@ -44,7 +30,7 @@ function Home() {
           <img src={jhopnLogo} alt="" className='logoNavbar'/>
         </div>
         <div>
-          <a href="">Habilidades</a>
+          <a href="#skills">Habilidades</a>
           <a href="" onClick={() => navigate('/Projetos')} >Projetos</a>
           {/* <a href="">Contato</a> */}
         </div>
@@ -52,6 +38,8 @@ function Home() {
 
       <div id='contentTotal'>
         <div className='background'></div>
+        <div className='backgroundBottom'></div>
+
 
         <div className='container'>
           <div className='perfilConfig'>
@@ -62,18 +50,12 @@ function Home() {
                 <img src={instaLogo} className="logo" alt="" />
               </a>
 
-              <a href="https://www.linkedin.com/in/jho%C3%A3o-santos-b0b633284/">
+              <a href="https://www.linkedin.com/in/jhoaosantos/">
                 <img src={linkedinLogo} className="logo" alt="" />
               </a>
             </div>
 
-            <a href="" className='divContato'>
-              <div className='contact'>
-                <p id='hireme'>
-                  Contate-me
-                </p>
-              </div>
-            </a>
+            <a href="" className='contate-me'>Contate-me</a>
           </div>
 
           <div className='contentor'>
@@ -83,7 +65,7 @@ function Home() {
 
        
 
-            <p className='tagsAssunto'>Habilidades</p>
+            <p className='tagsAssunto' id='skills'>Habilidades</p>
             <p>Possuo habilidades em frontend e em backend, segue abaixo as ferramentas das quais já usei</p>
             <div className='contentSkills'>
               <img className='imgSkills' src={cssLogo} alt="" />
@@ -98,52 +80,45 @@ function Home() {
             <p className='tagsAssunto'>Projetos</p>
             <p>Projetos no qual já participei</p>
 
-            {/* <motion.div ref={carousel} className="carrosel"  whileTap={{cursor: "grabbing"}}>
-              <motion.div className="inner"
-                drag="x"
-                dragConstraints={{right: 0, left: -width}}
-                initial={{ x:  100}}
-                animate={{ x: 0}}
-                transition={{duration: 0.8}}
-              >
-                {images.map(image => 
-                  <motion.div className="imagemProjetos" key={image}>
-                    <img src={image} alt="projeto" />
-                  </motion.div>
-                )}
-              </motion.div>
-            </motion.div> */}
 
             <p className='tagsAssunto'>Contato</p>
 
             <div className='entreEmContato'>
               <h2>Entre em contato comigo!</h2>
-              <p>Full name</p>
-              <input className='inputDados' type="text" placeholder='Enter full name' name="" id="" />
+              <p>Nome Completo</p>
+              <input className='inputDados' type="text" placeholder='Digite o seu nome completo' name="" id="" />
               <br />
               <p>Email</p>
-              <input className='inputDados' type="text"  placeholder='Enter email' name="" id="" />
+              <input className='inputDados' type="text"  placeholder='Digite o seu email' name="" id="" />
               <br />
-              <p>Phone</p>
+              <p>Telefone</p>
               <input className='inputDados'  type="text"  placeholder='+00 000 000 0000' name="" id="" />
               <br />
-              <p>Message</p>
-              <input className='inputDados'  type="text"  placeholder='Write a little brief about your project or scope of work.' name="" id="" />
+              <p>Mensagem</p>
+              <input
+                className='inputDados'
+                type="text"
+                placeholder='Escreva um breve resumo sobre seu projeto.'
+                id="mensagemInput"
+              />
               <br />
               <button id='buttonEnviar'>Enviar</button>
             </div>
+            <div className="blur-background"></div>
           </div>
         </div>
       </div>
 
       <footer className='footer'>
-        <img id='imgfooter' src={jhopnLogo} alt="" />
-        <p>Jhopn ©</p>
-        <div>
-          <p>SIGA-ME</p>
-          <a href="">Github</a>
-          <a href="">Linkedin</a>
-          <a href="">Instagram</a>
+        <div className='footerLogo'>
+          <img id='imgfooter' src={jhopnLogo} alt="" />
+          <p>Jhopn ©</p>
+        </div>
+        <div className='contatoFooter'>
+          <p >SIGA-ME</p>
+          <a href="https://github.com/Jhopn">Github</a>
+          <a href="https://www.linkedin.com/in/jhoaosantos/">Linkedin</a>
+          <a href="https://www.instagram.com/jhoao_ns/">Instagram</a>
         </div>
       </footer>
     </>
