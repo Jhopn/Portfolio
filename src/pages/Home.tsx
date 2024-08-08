@@ -22,7 +22,7 @@ import imagemProjeto from '../assets/Projetos/TaskApp/taskapp-home.png';
 import imagemProjeto2 from '../assets/Projetos/Timhontel/timhontel-navegue.png';
 import imagemProjeto3 from '../assets/Projetos/EcommerceApi/ecommerce-api.png';
 import imagemProjeto2Api from '../assets/Projetos/TaskApp/Taskapp-Api/api-taskapp.png';
-import { color } from 'framer-motion';
+// import { color } from 'framer-motion';
 
 function Home() {
   const navigate = useNavigate();
