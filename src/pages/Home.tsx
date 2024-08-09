@@ -9,8 +9,7 @@ import pythonLogo from '../assets/akar-icons--python-fill.png';
 import reactLogo from '../assets/uil--react.png';
 import javascriptLogo from '../assets/ri--javascript-fill.png';
 import jhopnLogo from '../assets/jhopn.png';
-import '../styles/App.css';
-import '../styles/style.scss';
+import '../styles/home/home.scss';
 // import { GitStatus } from '../services/statusGit.tsx';
 // import { Chart } from "react-google-charts";
 // import { motion } from "framer-motion";
@@ -20,8 +19,10 @@ import { useNavigate } from 'react-router-dom';
 import { MultiActionAreaCard } from "../components/MultiActionAreaCard.tsx";
 import imagemProjeto from '../assets/Projetos/TaskApp/taskapp-home.png';
 import imagemProjeto2 from '../assets/Projetos/Timhontel/timhontel-navegue.png';
-import imagemProjeto3 from '../assets/Projetos/EcommerceApi/ecommerce-api.png';
 import imagemProjeto2Api from '../assets/Projetos/TaskApp/Taskapp-Api/api-taskapp.png';
+import imagemProjeto3 from '../assets/Projetos/EcommerceApi/ecommerce-api.png';
+import imagemProjeto4 from '../assets/Projetos/MiniGameCalculator/Minigamecalculator.jpeg';
+
 // import { color } from 'framer-motion';
 
 function Home() {
@@ -36,7 +37,7 @@ function Home() {
         </div>
         <div>
           <a href="#skills">Habilidades</a>
-          <a href="" onClick={() => navigate('/Projetos')} >Projetos</a>
+          <a href="" onClick={() => navigate('/projetos')} >Projetos</a>
           {/* <a href="">Contato</a> */}
         </div>
       </nav>
@@ -101,7 +102,7 @@ function Home() {
                 descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
 
               <MultiActionAreaCard
-                imagemProjeto={'https://github-production-user-asset-6210df.s3.amazonaws.com/128644543/311267487-36f3a791-4a27-4ba9-84c4-dd473547c594.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240808T015913Z&X-Amz-Expires=300&X-Amz-Signature=1c74dc939dc7a990032738986de507b84aec61de6edaffb249d323b3c198be7e&X-Amz-SignedHeaders=host&actor_id=128644543&key_id=0&repo_id=748464173'}
+                imagemProjeto={imagemProjeto4}
                 nomeProjeto={'MiniGameCalculator'}
                 tags={[{ nome: 'React Native', cor: '#05d2fe' }, { nome: 'Firebase', cor: '#f88008' }, { nome: 'Expo Go', cor: '#000021' }]}
                 descricaoProjeto='Criação de layout' />

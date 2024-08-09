@@ -3,5 +3,5 @@ import Projetos from '../pages/Projetos';
 
 export const RoutesPath = {
 '/': Home,
-'/Projetos': Projetos,
+'/projetos': Projetos,
 };
