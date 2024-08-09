@@ -86,7 +86,7 @@ function Home() {
             <p>Projetos no qual já participei</p>
 
             <div className='projetos'>
-              <MultiActionAreaCard imagemProjeto={imagemProjeto3} nomeProjeto={'Ecommerce(Backend)'}
+              <MultiActionAreaCard imagemProjeto={imagemProjeto3} nomeProjeto={'Ecommerce'}
                 tags={[{ nome: 'NodeJs', cor: '#3e873e' }, { nome: 'Express', cor: '#222323' }, { nome: 'Prisma', cor: '#0d344b' },
                 { nome: 'Zod', cor: '#284c83' }, { nome: 'Docker', cor: '#139edd' }]} descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
 
@@ -95,20 +95,20 @@ function Home() {
                 descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
 
               <MultiActionAreaCard imagemProjeto={imagemProjeto2Api}
-                nomeProjeto={'Task App(Backend)'}
+                nomeProjeto={'Task App'}
                 tags={[{ nome: 'Typescript', cor: '#3178c6' }, { nome: 'NodeJs', cor: '#3e873e' },
                 { nome: 'Express', cor: '#222323' }, { nome: 'Prisma', cor: '#0d344b' }]}
                 descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
 
-              <MultiActionAreaCard imagemProjeto={imagemProjeto2}
-                nomeProjeto={'TimHontel(Frontend)'}
-                tags={[{ nome: 'Javascript', cor: '#f6df1c' }, { nome: 'Html', cor: '#e44c26' }, { nome: 'Css', cor: '#274de5' }]}
-                descricaoProjeto='Criação de layout' />
-
               <MultiActionAreaCard
                 imagemProjeto={'https://github-production-user-asset-6210df.s3.amazonaws.com/128644543/311267487-36f3a791-4a27-4ba9-84c4-dd473547c594.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240808T015913Z&X-Amz-Expires=300&X-Amz-Signature=1c74dc939dc7a990032738986de507b84aec61de6edaffb249d323b3c198be7e&X-Amz-SignedHeaders=host&actor_id=128644543&key_id=0&repo_id=748464173'}
-                nomeProjeto={'MiniGameCalculator(Mobile)'}
+                nomeProjeto={'MiniGameCalculator'}
                 tags={[{ nome: 'React Native', cor: '#05d2fe' }, { nome: 'Firebase', cor: '#f88008' }, { nome: 'Expo Go', cor: '#000021' }]}
+                descricaoProjeto='Criação de layout' />
+                
+              <MultiActionAreaCard imagemProjeto={imagemProjeto2}
+                nomeProjeto={'TimHontel'}
+                tags={[{ nome: 'Javascript', cor: '#f6df1c' }, { nome: 'Html', cor: '#e44c26' }, { nome: 'Css', cor: '#274de5' }]}
                 descricaoProjeto='Criação de layout' />
             </div>
 
