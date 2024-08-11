@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMemo } from 'react';
 import { RoutesPath } from './RoutesPath';
+import Navbar from '../components/Navbar.tsx';
+import Footer from '../components/Footer.tsx';
 
 export const RouterManager = () => {
   const routes = useMemo(() => {
@@ -15,7 +17,9 @@ export const RouterManager = () => {
 
   return (
     <BrowserRouter>
+      <Navbar/>
       <Routes>{routes}</Routes>
+      <Footer/>
     </BrowserRouter>
   );
 };

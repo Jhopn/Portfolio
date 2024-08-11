@@ -7,6 +7,13 @@ body {
     position: relative; 
 }
 
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -283,6 +290,7 @@ body {
 h1 {
     font-family: 'Roboto';
     font-weight: 300;
+    color: #ffffff;
 }
 
 h2 {

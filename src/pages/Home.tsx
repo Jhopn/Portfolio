@@ -8,40 +8,19 @@ import nodeLogo from '../assets/la--node.png';
 import pythonLogo from '../assets/akar-icons--python-fill.png';
 import reactLogo from '../assets/uil--react.png';
 import javascriptLogo from '../assets/ri--javascript-fill.png';
-import jhopnLogo from '../assets/jhopn.png';
 import '../styles/home/home.scss';
 // import { GitStatus } from '../services/statusGit.tsx';
 // import { Chart } from "react-google-charts";
 // import { motion } from "framer-motion";
-// import image1 from "../assets/Carrosel/gojo.jpg";
-// import image2 from "../assets/Carrosel/gojo2.jfif";
-import { useNavigate } from 'react-router-dom';
 import { MultiActionAreaCard } from "../components/MultiActionAreaCard.tsx";
 import imagemProjeto from '../assets/Projetos/TaskApp/taskapp-home.png';
-import imagemProjeto2 from '../assets/Projetos/Timhontel/timhontel-navegue.png';
-import imagemProjeto2Api from '../assets/Projetos/TaskApp/Taskapp-Api/api-taskapp.png';
 import imagemProjeto3 from '../assets/Projetos/EcommerceApi/ecommerce-api.png';
 import imagemProjeto4 from '../assets/Projetos/MiniGameCalculator/Minigamecalculator.jpeg';
-
 // import { color } from 'framer-motion';
 
 function Home() {
-  const navigate = useNavigate();
-
-
   return (
     <>
-      <nav className='navbar'>
-        <div>
-          <img src={jhopnLogo} alt="" className='logoNavbar' />
-        </div>
-        <div>
-          <a href="#skills">Habilidades</a>
-          <a href="" onClick={() => navigate('/projetos')} >Projetos</a>
-          {/* <a href="">Contato</a> */}
-        </div>
-      </nav>
-
       <div id='contentTotal'>
         <div className='background'></div>
         <div className='backgroundBottom'></div>
@@ -95,27 +74,16 @@ function Home() {
                 tags={[{ nome: 'React', cor: '#05d2fe' }, { nome: 'Material UI', cor: '#0081cc' }, { nome: 'Vite', cor: '#aa4cff' }]}
                 descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
 
-              <MultiActionAreaCard imagemProjeto={imagemProjeto2Api}
-                nomeProjeto={'Task App'}
-                tags={[{ nome: 'Typescript', cor: '#3178c6' }, { nome: 'NodeJs', cor: '#3e873e' },
-                { nome: 'Express', cor: '#222323' }, { nome: 'Prisma', cor: '#0d344b' }]}
-                descricaoProjeto='Gerenciador de Tarefas com autenticação e Jwt' />
-
               <MultiActionAreaCard
                 imagemProjeto={imagemProjeto4}
                 nomeProjeto={'MiniGameCalculator'}
                 tags={[{ nome: 'React Native', cor: '#05d2fe' }, { nome: 'Firebase', cor: '#f88008' }, { nome: 'Expo Go', cor: '#000021' }]}
                 descricaoProjeto='Criação de layout' />
-                
-              <MultiActionAreaCard imagemProjeto={imagemProjeto2}
-                nomeProjeto={'TimHontel'}
-                tags={[{ nome: 'Javascript', cor: '#f6df1c' }, { nome: 'Html', cor: '#e44c26' }, { nome: 'Css', cor: '#274de5' }]}
-                descricaoProjeto='Criação de layout' />
             </div>
 
             <p className='tagsAssunto'>Contato</p>
 
-            <div className='entreEmContato'>
+            <div className='entreEmContato' id='contateme'>
               <h2>Entre em contato comigo!</h2>
               <p>Nome Completo</p>
               <input className='inputDados' type="text" placeholder='Digite o seu nome completo' name="" id="" />
@@ -140,19 +108,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <footer className='footer'>
-        <div className='footerLogo'>
-          <img id='imgfooter' src={jhopnLogo} alt="" />
-          <p>Jhopn ©</p>
-        </div>
-        <div className='contatoFooter'>
-          <p >SIGA-ME</p>
-          <a href="https://github.com/Jhopn">Github</a>
-          <a href="https://www.linkedin.com/in/jhoaosantos/">Linkedin</a>
-          <a href="https://www.instagram.com/jhoao_ns/">Instagram</a>
-        </div>
-      </footer>
     </>
   );
 }
