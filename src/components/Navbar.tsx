@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import jhopnLogo from '../assets/jhopn.png';
+import jhopnLogo from '../assets/Logo/jhopn.png';
 
 export default function Navbar() {
   const navigate = useNavigate();

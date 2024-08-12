@@ -19,7 +19,7 @@ interface MultiActionAreaCardProps {
 
 export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProjeto, tags = []}: MultiActionAreaCardProps) {
   return (
-    <Card sx={{ maxWidth: 450, marginBottom: 5 }}>
+    <Card sx={{ maxWidth: 450, marginBottom: 5, height: 480 }}>
       <CardActionArea>
         <CardMedia
           height={280}
@@ -38,13 +38,15 @@ export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProj
           <Typography gutterBottom variant="h5" sx={{ color: '#000000', margin: 0.5, fontFamily: 'Roboto', fontWeight: 'bold' }} component="div" >
             {nomeProjeto}
           </Typography>
-          <Typography variant="body2" sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Roboto'}} >
+          <Typography variant="body2" sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Roboto', height: 40}} >
             {descricaoProjeto}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ backgroundColor: "#ffa800" }}>
-        <Button size="medium" color="info" sx={{ backgroundColor: "#000000", color: "#ffffff", textTransform: "capitalize",  marginLeft: 1,
+        <Button size="medium" color="info" sx={{ backgroundColor: "#000000", 
+        fontFamily: 'Roboto',
+        color: "#ffffff", textTransform: "capitalize",  marginLeft: 1,
               '&:hover': {
                 color: '#ffa800',
                 backgroundColor: "#000000",

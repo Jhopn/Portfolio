@@ -1,4 +1,4 @@
-import jhopnLogo from '../assets/jhopn.png';
+import jhopnLogo from '../assets/Logo/jhopn.png';
 
 export default function Footer() {
     return(
