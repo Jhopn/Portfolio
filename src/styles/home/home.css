@@ -51,12 +51,14 @@ html, body, #root {
 }
 
 .perfilFoto {
+  width: 15em;
   height: 20em;
   padding: 1.5em;
   border-radius: 3rem;
 }
 
 .logo {
+  width: 0.9em;
   height: 0.9em;
   padding: 1em;
 }
@@ -117,7 +119,7 @@ html, body, #root {
   position: absolute;
   top: 0px;
   left: 0px;
-  background-image: url("../../assets/Background/ondas.svg");
+  background-image: url("../../assets/Background/ondas.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -126,20 +128,6 @@ html, body, #root {
   z-index: 0;
 }
 
-/* 
-.backgroundBottom {
-  width: 100%;
-  height: 630px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("../../assets/Background/gotas.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-  z-index: 0;
-} */
 
 .contentor {
   padding: 0.5rem;
@@ -307,6 +295,7 @@ html, body, #root {
 
 #imgfooter {
   width: 128px;
+  height: 128px;
   margin: 0.2rem;
 }
 

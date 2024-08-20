@@ -14,13 +14,19 @@ interface MultiActionAreaCardProps {
     nomeProjeto: string;
     descricaoProjeto: string;
     tags: Tag[];
+    link: string;
 }
-  
 
-export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProjeto, tags = []}: MultiActionAreaCardProps) {
+
+export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProjeto, tags = [], link}: MultiActionAreaCardProps) {
+  
+  const handleClick = () => {
+    window.open(link, '_blank')
+  };
+
   return (
     <Card sx={{ maxWidth: 450, marginBottom: 5, height: 480 }}>
-      <CardActionArea>
+      <CardActionArea onClick={handleClick}>
         <CardMedia
           height={280}
           component="img"
@@ -44,7 +50,10 @@ export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProj
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ backgroundColor: "#ffa800" }}>
-        <Button size="medium" color="info" sx={{ backgroundColor: "#000000", 
+        <Button size="medium" 
+        color="info" 
+        onClick={handleClick}
+        sx={{ backgroundColor: "#000000", 
         fontFamily: 'Roboto',
         color: "#ffffff", textTransform: "capitalize",  marginLeft: 1,
               '&:hover': {
