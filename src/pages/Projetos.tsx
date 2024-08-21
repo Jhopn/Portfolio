@@ -3,7 +3,6 @@ import { ProjetosRow } from "../components/ProjetosRow.js"
 import { projetosConfiguracao } from '../components/ProjetosSwiper.js';
 import { projetos } from '../components/ProjetosRow.js';
 
-
 const todosProjetos = [...projetosConfiguracao, ...projetos];
 const uniqueTags = Array.from(
   new Map(

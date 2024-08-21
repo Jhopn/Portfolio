@@ -16,7 +16,7 @@ html, body, #root {
   align-items: center;
   height: 3rem;
   background-color: #000000;
-  border-bottom: #ffa800 2px ridge;
+  /* border-bottom: #ffa800 2px ridge; */
   position: relative;
   z-index: 10;
 }
@@ -26,7 +26,7 @@ html, body, #root {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "Arial";
   margin: 2rem;
   font-weight: 500;
   font-size: 15px;
@@ -169,7 +169,7 @@ html, body, #root {
 
 .tagsAssunto {
   color: #ffa800;
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 500;
   font-size: 20px;
 }
@@ -217,7 +217,7 @@ html, body, #root {
 }
 
 .contatoFooter p {
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 700;
 }
 
@@ -225,7 +225,7 @@ html, body, #root {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 0.7rem;
@@ -319,18 +319,18 @@ html, body, #root {
 }
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 300;
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 700;
   font-size: 19px;
 }
 
 p {
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 300;
   font-size: 17px;
 }
@@ -339,7 +339,7 @@ p {
   color: #ffffff;
   text-shadow: 1px 2px 4px #000000;
   margin-bottom: 0px;
-  font-family: "Roboto";
+  font-family: "Arial";
   font-weight: 500;
   font-size: 17px;
   background-color: #000000;

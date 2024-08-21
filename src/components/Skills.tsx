@@ -5,13 +5,13 @@ import nodeLogo from '../assets/Icons/Skills/node.png';
 import pythonLogo from '../assets/Icons/Skills/python.png';
 import reactLogo from '../assets/Icons/Skills/react.png';
 import javascriptLogo from '../assets/Icons/Skills/javascript.png';
-import javaLogo from '../assets/Icons/Skills/java.svg';
-import mongoLogo from '../assets/Icons/Skills/mongodb.svg';
-import postgresLogo from '../assets/Icons/Skills/postgresql.svg';
-import prismaLogo from '../assets/Icons/Skills/prisma.svg';
-import springLogo from '../assets/Icons/Skills/spring-boot.svg';
-import typescriptLogo from '../assets/Icons/Skills/typescript.svg';
-import expressLogo from '../assets/Icons/Skills/express.svg';
+import javaLogo from '../assets/Icons/Skills/java.webp';
+import mongoLogo from '../assets/Icons/Skills/mongodb.webp';
+import postgresLogo from '../assets/Icons/Skills/postgresql.webp';
+import prismaLogo from '../assets/Icons/Skills/prisma.webp';
+import springLogo from '../assets/Icons/Skills/spring-boot.webp';
+import typescriptLogo from '../assets/Icons/Skills/typescript.webp';
+import expressLogo from '../assets/Icons/Skills/express.webp';
 
 const logos = [
     { name: 'HTML', logo: htmlLogo },

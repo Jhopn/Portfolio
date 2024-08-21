@@ -14,7 +14,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-
 function Home() {
   const navigate = useNavigate();
 
@@ -25,8 +24,6 @@ function Home() {
     <>
       <div id='contentTotal'>
         <div className='background'></div>
-        <div className='backgroundBottom'></div>
-
 
         <div className='container'>
           <div className='perfilConfig'>
@@ -66,7 +63,7 @@ function Home() {
             <p>Projetos no qual já participei</p>
             <Button size="medium" color="info" sx={{
               backgroundColor: "#000000",
-              fontFamily: 'Roboto', border: '1px solid #ffffff', color: "#ffffff", marginLeft: 1,
+              fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", marginLeft: 1,
               '&:hover': {
                 color: '#ffa800',
                 border: '1px solid #ffa800'

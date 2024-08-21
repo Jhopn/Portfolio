@@ -1,10 +1,12 @@
 import { MultiActionAreaCard } from "./MultiActionAreaCard.tsx";
 import { projetosConfiguracao } from "./ProjetosSwiper.tsx";
-import imagemProjeto5 from '../assets/Projetos/Rdt/rdt.webp';
+import imagemProjeto from '../assets/Projetos/Rdt/rdt.webp';
+import imagemProjeto1 from '../assets/Projetos/TaskManager/inicio.webp';
+
 
 export const projetos = [
     {
-        imagem: imagemProjeto5,
+        imagem: imagemProjeto,
         nome: 'Rdt',
         tags: [
             { nome: 'NodeJs', cor: '#3e873e' },
@@ -15,6 +17,17 @@ export const projetos = [
         ],
         descricao: 'Criação de layout',
         link: 'https://github.com/LPeter-nm/rdt3.0-socket'
+    },
+    {
+        imagem: imagemProjeto1,
+        nome: 'Task Manager',
+        tags: [
+            { nome: 'React Native', cor: '#05d2fe' },
+            { nome: 'Supabase', cor: '#41cf8d' },
+            { nome: 'Expo Go', cor: '#000021' }
+        ],
+        descricao: 'Criação de layout',
+        link: 'https://github.com/Jhopn/taskapp'
     }
 ];
 

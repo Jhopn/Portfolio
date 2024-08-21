@@ -36,15 +36,15 @@ export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProj
         <CardContent  sx={{ backgroundColor: "#ffa800"}}>
           <div style={{display: "flex"}} >
           {tags.map((tag, index) => (
-            <Typography key={index} sx={{ color: '#ffffff', textShadow: '1px 2px 4px #000000', borderRadius: 1, padding: 0.5, margin: 0.5, textAlign: 'center', backgroundColor: tag.cor, fontFamily: 'Roboto'}} variant="body2" color="text.secondary">
+            <Typography key={index} sx={{ color: '#ffffff', textShadow: '1px 2px 4px #000000', borderRadius: 1, padding: 0.5, margin: 0.5, textAlign: 'center', backgroundColor: tag.cor, fontFamily: 'Arial'}} variant="body2" color="text.secondary">
               {tag.nome}
             </Typography>
           ))}
           </div>
-          <Typography gutterBottom variant="h5" sx={{ color: '#000000', margin: 0.5, fontFamily: 'Roboto', fontWeight: 'bold' }} component="div" >
+          <Typography gutterBottom variant="h5" sx={{ color: '#000000', margin: 0.5, fontFamily: 'Arial', fontWeight: 'bold' }} component="div" >
             {nomeProjeto}
           </Typography>
-          <Typography variant="body2" sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Roboto', height: 40}} >
+          <Typography variant="body2" sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Arial', height: 40}} >
             {descricaoProjeto}
           </Typography>
         </CardContent>
@@ -54,7 +54,7 @@ export  function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProj
         color="info" 
         onClick={handleClick}
         sx={{ backgroundColor: "#000000", 
-        fontFamily: 'Roboto',
+        fontFamily: 'Arial',
         color: "#ffffff", textTransform: "capitalize",  marginLeft: 1,
               '&:hover': {
                 color: '#ffa800',
