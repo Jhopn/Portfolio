@@ -1,10 +1,7 @@
-import perfil from '../assets/Icons/perfil2.jpg';
-import linkedinLogo from "../assets/Icons/ri_linkedin-fill.png";
-import instaLogo from "../assets/Icons/bi_instagram.png";
-import '../styles/home/home.scss';
-// import { Chart } from "react-google-charts";
-// import { motion } from "framer-motion";
-// import { color } from 'framer-motion';
+import perfil from '../assets/Icons/perfil2.webp';
+import linkedinLogo from "../assets/Icons/ri_linkedin-fill.webp";
+import instaLogo from "../assets/Icons/bi_instagram.webp";
+import '../styles/home/home.css';
 import { Skills } from '../components/Skills.tsx';
 import { Button } from '@mui/material';
 import 'swiper/css';
@@ -17,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
   const navigate = useNavigate();
 
-  const handleClick = () =>{
+  const handleClick = () => {
     navigate('/projetos')
   }
   return (
@@ -44,8 +41,15 @@ function Home() {
 
           <div className='contentor'>
             <p id='ola'>Olá, eu sou o</p>
-            <h1 id='titulo'>Jhoão Pedro, desenvolvedor Full Stack, desenvolvo sites e aplicativos.</h1>
-            <p>Sou estudante de Sistema para Internet no IFMA Campus Timon e participo da Developer Community em seus principais projetos.</p>
+            <h1 id='titulo'>Jhoão Pedro,<span className='subtitulo'> desenvolvedor Full Stack.</span> </h1>
+            
+
+            <p className='resumo'>Sou estudante de Sistema para Internet no
+              <span className='destaque'> IFMA Campus Timon </span>
+              e participo da
+              <span className='destaque'> Developer Community </span>
+              em seus principais projetos.</p>
+            <button>Download CV</button>
           </div>
 
         </div>
@@ -54,7 +58,7 @@ function Home() {
           <p className='tagsAssunto' id='skills'>Habilidades</p>
           <p>Possuo habilidades em frontend e em backend, segue abaixo as ferramentas das quais já usei</p>
           <div className='contentSkills'>
-            <Skills/>
+            <Skills />
           </div>
 
           <p className='tagsAssunto'>Projetos</p>
@@ -69,14 +73,14 @@ function Home() {
                 border: '1px solid #ffa800'
               }
             }}
-            onClick={handleClick}
+              onClick={handleClick}
             >
               Veja todos os projetos
             </Button>
           </div>
 
           <div className='projetos'>
-            <ProjetosSwiper/>
+            <ProjetosSwiper />
           </div>
 
 
