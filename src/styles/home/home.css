@@ -10,35 +10,6 @@ html, body, #root {
   width: 100%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3rem;
-  padding: 0.5rem;
-  background-color: #ffa800;
-  position: relative;
-}
-
-.navbar a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-  font-family: "Arial";
-  margin: 2rem;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.logoNavbar {
-  width: 50px;
-  height: 50px;
-  margin: 15px;
-  background-color: #000000;
-  border-radius: 50%;
-}
-
 .perfilConfig {
   display: inline-block;
   margin-right: 8rem;
@@ -196,14 +167,13 @@ html, body, #root {
   padding: 0rem;
   font-size: 25px;
 }
-/* .resumo{
-    text-shadow: 1px 2px 4px hsl(0, 0%, 0%); 
-} */
+
 .destaque{
   color: #ffa800;
   font-weight: bold;
   text-shadow: none;
 }
+
 .footer {
   display: flex;
   padding: 0.2rem 5rem;
@@ -248,9 +218,14 @@ html, body, #root {
   display: inline-block;
   width: 100%;
   border-radius: 12px;
-  /* background-color: #ffa800; */
   padding: 1rem;
   margin-bottom: 3rem;
+}
+
+.entreEmContato p{
+  color: #ffa800;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .inputDados {
@@ -307,8 +282,8 @@ html, body, #root {
 }
 
 #imgfooter {
-  width: 128px;
-  height: 128px;
+  width: 108px;
+  height: 108px;
   margin: 0.2rem;
 }
 
@@ -446,6 +421,9 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
+  body{
+    width: 100%;
+  }
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -478,4 +456,24 @@ button:focus-visible {
 
 .custom-shape-divider-top-1724337576 .shape-fill {
   fill: #FFA800;
+}
+.custom-shape-divider-bottom-1724372019 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1724372019 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+.custom-shape-divider-bottom-1724372019 .shape-fill {
+    fill: #FFA800;
 }

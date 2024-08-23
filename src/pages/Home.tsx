@@ -56,7 +56,7 @@ function Home() {
               em seus principais projetos.</p>
             <Button size="medium" color="info" sx={{
               backgroundColor: "#000000",
-              fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", marginLeft: 1,
+              fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", 
               '&:hover': {
                 color: '#ffa800',
                 border: '1px solid #ffa800'

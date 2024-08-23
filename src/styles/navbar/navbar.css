@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: #ffa800;
+    position: relative;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar.scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.7;
+}
+
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    font-family: "Arial";
+    font-weight: bold;
+    margin: 2rem;
+    font-size: 15px;
+  }
+
+.logoNavbar {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+  @media (max-width: 768px) {
+    .navbar div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Esconde o menu por padrão */
+        background-color: #333;
+    }
+
+    .navbar ul.open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar .menu-icon {
+        display: block; /* Exibe o ícone do menu em dispositivos móveis */
+    }
+}
