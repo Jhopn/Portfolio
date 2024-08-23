@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { ProjetosSwiper } from "../components/ProjetosSwiper.js"
 import { useNavigate } from 'react-router-dom';
-
+import { KnowledgeSkill } from '../components/KnowledgeSkill.tsx'
 
 
 function Home() {
@@ -56,9 +56,8 @@ function Home() {
               em seus principais projetos.</p>
             <Button size="medium" color="info" sx={{
               backgroundColor: "#000000",
-              fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", 
+              fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffa800",
               '&:hover': {
-                color: '#ffa800',
                 border: '1px solid #ffa800'
               }
             }}>Download CV</Button>
@@ -73,10 +72,15 @@ function Home() {
             <Skills />
           </div>
 
+          <div>
+            <p className='tagsAssunto'>Conhecimento das Linguagens</p>
+            <KnowledgeSkill />
+          </div>
+
           <p className='tagsAssunto'>Projetos</p>
 
           <div className='textoProjeto'>
-            <p>Projetos no qual já participei</p>
+            <p>Alguns dos projetos que participei:</p>
             <Button size="medium" color="info" sx={{
               backgroundColor: "#000000",
               fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", marginLeft: 1,

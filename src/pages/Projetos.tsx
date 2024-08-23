@@ -1,4 +1,4 @@
-// import '../styles/project/projeto.css';
+import '../styles/project/projeto.css';
 import { ProjetosRow } from "../components/ProjetosRow.js"
 import { projetosConfiguracao } from '../components/ProjetosSwiper.js';
 import { projetos } from '../components/ProjetosRow.js';
@@ -17,9 +17,11 @@ function Projetos() {
   return (
     <div className='containerProjetos'>
 
-      <h2>Projetos que participei</h2>
+      <h2 className='subtitulo'>Projetos</h2>
 
-        <p style={{ fontSize: '1.2em', fontWeight: 'bold', marginBottom: '10px' }}>Filtrar</p>
+      <p>Aqui estão todos os projetos que desenvolvi com suas determinadas tecnologias, até o momento.</p>
+
+        <p className='destaque'>Filtrar</p>
       {/* <div style={{ display: 'flex', flexDirection: 'row', gap: '15px' }}> */}
 
         <div style={{
@@ -30,7 +32,7 @@ function Projetos() {
           padding: '10px',
           width: '95%',
           height: '15%',
-          backgroundColor: '#f0f0f0', // Fundo para destacar a área de filtro
+          backgroundColor: '#ffa800', // Fundo para destacar a área de filtro
           borderRadius: '8px' // Bordas arredondadas para suavizar a apresentação
         }}>
           {uniqueTags.map((tag, projetoIndex) => (
@@ -42,9 +44,8 @@ function Projetos() {
               padding: '5px',
               width: '200px',
               height: 'initial',
-              backgroundColor: '#000000', // Fundo das tags
               borderRadius: '5px', // Bordas arredondadas
-              color: '#fff' // Cor do texto branca para contraste
+              color: '#000000' // Cor do texto branca para contraste
             }}>
               <p style={{ marginRight: '10px', fontWeight: 'bold', margin: 0 }}>{tag.nome}</p>
               <input type="checkbox" />
