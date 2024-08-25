@@ -24,7 +24,7 @@ html, body, #root {
 
 .perfilFoto {
   width: 250px;
-  height: 310px;
+  height: 320px;
   border-radius: 2rem;
   border: #ffa800 solid 2px;
   overflow: hidden;
@@ -60,37 +60,6 @@ html, body, #root {
   padding: 0rem 10%;
   position: relative;
   z-index: 1;
-}
-
-.imgWrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.imgWrapper:hover .imgSkills {
-  transform: scale(1.1);
-}
-
-.tooltip {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  position: absolute;
-  bottom: 100%; 
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap; 
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.imgWrapper:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
 }
 
 .textoProjeto{
@@ -146,16 +115,6 @@ html, body, #root {
   font-size: 20px;
 }
 
-.imgSkills {
-  width: 4rem;
-  height: 4rem;
-  border: 0.2rem solid #ffa800;
-  padding: 0.2rem;
-  margin: 0.7rem;
-  border-radius: 20%;
-  background-color: #ffa800;
-}
-
 #titulo {
   margin-top: 1rem;
   margin-bottom: 5px;
@@ -173,46 +132,6 @@ html, body, #root {
   color: #ffa800;
   font-weight: bold;
   text-shadow: none;
-}
-
-.footer {
-  display: flex;
-  padding: 0.2rem 5rem;
-  background-color: #ffa800;
-  color: black;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.footerLogo {
-  text-align: center;
-}
-
-.footerLogo p {
-  font-weight: 500;
-}
-
-.contatoFooter {
-  display: grid;
-  text-align: left;
-  margin-left: 2rem;
-  border-left: #000000 1px solid;
-  padding-left: 1rem;
-}
-
-.contatoFooter p {
-  font-family: "Arial";
-  font-weight: 700;
-}
-
-.contatoFooter a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  font-family: "Arial";
-  font-weight: 500;
-  font-size: 15px;
-  margin-bottom: 0.7rem;
 }
 
 .entreEmContato {
@@ -255,18 +174,6 @@ html, body, #root {
   outline: none;
 }
 
-/* .blur-background {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  width: 74%;
-  height: 650px;
-  border-radius: 12px;
-  backdrop-filter: blur(1px);
-  background-color:  rgba(255, 168, 0, 1);
-  z-index: -1;
-} */
-
 #buttonEnviar {
   margin-top: 2rem;
   margin-bottom: 1.6rem;
@@ -280,12 +187,6 @@ html, body, #root {
 #buttonEnviar:hover {
   color: #ffa800;
   border: 1px solid #ffa800;
-}
-
-#imgfooter {
-  width: 108px;
-  height: 108px;
-  margin: 0.2rem;
 }
 
 .inner {
@@ -363,6 +264,9 @@ p {
     justify-content: space-evenly;
     position: relative;
     z-index: 3;
+  }
+  .contentSkills{
+    text-align: center;
   }
 }
 

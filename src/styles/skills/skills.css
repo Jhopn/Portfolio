@@ -1,0 +1,48 @@
+.imgWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imgWrapper:hover .imgSkills {
+    transform: scale(1.1);
+  }
+
+  .imgWrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .imgSkills {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid #ffa800;
+    padding: 0.2rem;
+    margin: 0.7rem;
+    border-radius: 20%;
+    background-color: #ffa800;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .imgSkills {
+        width: 3rem;
+        height: 3rem;
+        margin: 0.3rem;
+      }
+  }

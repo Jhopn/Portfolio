@@ -10,26 +10,19 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(prevState => !prevState);
   };
 
   return (
-    <nav className={`navbar Projetos ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div>
         <img
           onClick={() => navigate('/')}
@@ -39,10 +32,13 @@ export default function Navbar() {
           style={{ cursor: "pointer" }}
         />
       </div>
-      <span className="menu-icon" onClick={toggleMenu}>&#9776;</span>
-      <div className={isMenuOpen ? 'open' : ''}>
+      <span className="menu-icon" onClick={toggleMenu}>
+        <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+      </span>
+      <div className={isMenuOpen ? 'menu open' : 'menu off'}
+       onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <a onClick={() => navigate('/')} href="#skills">Habilidades</a>
-        <a onClick={() => navigate('/projetos')} href="#projetos">Projetos</a>
+        <a onClick={() => navigate('/projetos')}>Projetos</a>
         <a onClick={() => navigate('/')} href="#contateme">Contato</a>
       </div>
     </nav>

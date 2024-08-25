@@ -1,7 +1,6 @@
 import { MultiActionAreaCard } from "./MultiActionAreaCard.tsx";
 import imagemProjeto from '../assets/Projetos/TaskApp/taskapp-home.webp';
 import imagemProjeto2 from '../assets/Projetos/Timhontel/timhontel-navegue.webp';
-import imagemProjeto2Api from '../assets/Projetos/TaskApp/Taskapp-Api/api-taskapp.png';
 import imagemProjeto3 from '../assets/Projetos/EcommerceApi/ecommerce.webp';
 import imagemProjeto4 from '../assets/Projetos/MiniGameCalculator/Minigamecalculator.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,26 +22,18 @@ export const projetosConfiguracao = [
     },
     {
         imagem: imagemProjeto,
-        nome: 'Task App (Frontend)',
+        nome: 'Task App',
         tags: [
             { nome: 'React', cor: '#05d2fe' },
             { nome: 'Material UI', cor: '#0081cc' },
-            { nome: 'Vite', cor: '#aa4cff' }
-        ],
-        descricao: 'Gerenciador de Tarefas com autenticação e Jwt',
-        link: 'https://github.com/Guilhermeprog3/Front-Task'
-    },
-    {
-        imagem: imagemProjeto2Api,
-        nome: 'Task App (Backend)',
-        tags: [
+            { nome: 'Vite', cor: '#aa4cff' },
             { nome: 'Typescript', cor: '#3178c6' },
             { nome: 'NodeJs', cor: '#3e873e' },
             { nome: 'Express', cor: '#222323' },
             { nome: 'Prisma', cor: '#0d344b' }
         ],
-        descricao: 'Gerenciador de Tarefas com autenticação e Jwt',
-        link: "https://github.com/Jhopn/Back-Task"
+        descricao: 'Gerenciador de Tarefas',
+        link: 'https://github.com/Guilhermeprog3/Front-Task'
     },
     {
         imagem: imagemProjeto4,

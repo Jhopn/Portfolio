@@ -12,6 +12,7 @@ import prismaLogo from '../assets/Icons/Skills/prisma.webp';
 import springLogo from '../assets/Icons/Skills/spring-boot.webp';
 import typescriptLogo from '../assets/Icons/Skills/typescript.webp';
 import expressLogo from '../assets/Icons/Skills/express.webp';
+import '../styles/skills/skills.css';
 
 const logos = [
     { name: 'HTML', logo: htmlLogo },

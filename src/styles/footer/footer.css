@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    padding: 0.2rem 5rem;
+    background-color: #ffa800;
+    color: black;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footerLogo {
+    text-align: center;
+}
+
+.footerLogo p {
+    font-weight: 500;
+}
+
+.contatoFooter {
+    display: grid;
+    text-align: left;
+    margin-left: 2rem;
+    border-left: #000000 1px solid;
+    padding-left: 1rem;
+}
+
+.contatoFooter p {
+    font-family: "Arial";
+    font-weight: 700;
+}
+
+.contatoFooter a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Arial";
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0.7rem;
+}
+
+#imgfooter {
+    width: 108px;
+    height: 108px;
+    margin: 0.2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer{
+        padding: 1rem;
+    }
+
+    #imgfooter {
+        width: 88px;
+        height: 88px;
+    }
+}

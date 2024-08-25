@@ -6,9 +6,8 @@ import { Skills } from '../components/Skills.tsx';
 import { Button } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { ProjetosSwiper } from "../components/ProjetosSwiper.js"
+import { ProjetosSwiper } from "../components/ProjetosSwiper.js";
 import { useNavigate } from 'react-router-dom';
-import { KnowledgeSkill } from '../components/KnowledgeSkill.tsx'
 
 
 function Home() {
@@ -67,14 +66,9 @@ function Home() {
 
         <div>
           <p className='tagsAssunto' id='skills'>Habilidades</p>
-          <p>Possuo habilidades em frontend e em backend, segue abaixo as ferramentas das quais já usei</p>
+          <p>Ferramentas que já utilizei em meus projetos.</p>
           <div className='contentSkills'>
             <Skills />
-          </div>
-
-          <div>
-            <p className='tagsAssunto'>Conhecimento das Linguagens</p>
-            <KnowledgeSkill />
           </div>
 
           <p className='tagsAssunto'>Projetos</p>
