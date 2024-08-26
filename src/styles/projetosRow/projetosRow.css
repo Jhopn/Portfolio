@@ -1,0 +1,26 @@
+.cardProjetos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.containerContent {
+    width: 30%;
+    margin: 0 auto;
+}
+
+@media (max-width: 450px) {
+    .cardProjetos {
+        display: grid;
+        padding: 0.5rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .containerContent {
+        width: 63%;
+    }
+
+}
+

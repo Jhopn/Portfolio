@@ -1,4 +1,19 @@
 .containerProjetos{
   background-color: #000000;
-  padding: 1rem;
+  padding: 1.5rem;
+}
+
+.checkboxFiltro{
+  background-color: #000000;
+  border: solid #ffa800 2px;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 450px) {
+  .pagProjetos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }

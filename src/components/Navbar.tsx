@@ -37,8 +37,8 @@ export default function Navbar() {
       </span>
       <div className={isMenuOpen ? 'menu open' : 'menu off'}
        onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <a onClick={() => navigate('/')} href="#skills">Habilidades</a>
-        <a onClick={() => navigate('/projetos')}>Projetos</a>
+        <a onClick={() => navigate('/')} href="#skills" about='Minhas Habilidades'>Habilidades</a>
+        <a onClick={() => navigate('/projetos')} href='' >Projetos</a>
         <a onClick={() => navigate('/')} href="#contateme">Contato</a>
       </div>
     </nav>
