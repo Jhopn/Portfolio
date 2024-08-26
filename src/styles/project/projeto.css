@@ -1,17 +1,129 @@
-.containerProjetos{
+.containerProjetos {
   background-color: #000000;
   padding: 1.5rem;
 }
 
-.checkboxFiltro{
+.buttonFiltro {
+  border: none;
+  color: #ffa800;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.buttonFiltro:hover{
+  color: #000000;
+  background-color: #ffa800;
+}
+
+.tagsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.containerModal {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #000000;
-  border: solid #ffa800 2px;
-  width: 14px;
-  height: 14px;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.contentTags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkbox label {
+  position: relative;
+  padding-left: 2.2em;
+  display: inline-block;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5em;
+  width: 1.5em;
+  background: #000000;
+  margin-right: 0.5em;
+  border: 2px solid #ffffff;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.checkbox label::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 0.75em;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #FFF;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.checkbox label:focus::before, .checkbox label:hover::before {
+  background: #ffa800;
+}
+.checkbox input:checked + label::before {
+  background: #ffa800;
+  border-color: #ffa800;
+}
+.checkbox input:checked + label::after {
+  opacity: 1;
+}
+
+.buttonFecharModal {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffa800;
+  border: solid #ffa800 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonFecharModal:hover{
+  color: #000000;
+  background-color: #ffa800;
+  border: solid #000000 1px;
 }
 
 @media (max-width: 450px) {
-  .pagProjetos{
+  .pagProjetos {
     margin-top: 20px;
     display: flex;
     justify-content: center;

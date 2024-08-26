@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 function Projetos() {
   const [filtro, setFiltro] = useState<string[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const todosProjetos = projetosConfiguracao;
   const uniqueTags = Array.from(
@@ -30,48 +32,46 @@ function Projetos() {
       <h2 className='subtitulo'>Projetos</h2>
       <p>Aqui estão todos os projetos que desenvolvi com suas determinadas tecnologias, até o momento.</p>
 
-      <p className='destaque'>Filtrar</p>
+      <div>
+        <button className='buttonFiltro'  onClick={() => setIsModalOpen(true)}>
+          <i className="fas fa-filter" style={{ marginRight: '8px' }}></i>
+          Filtrar
+        </button>
 
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        gap: '5px',
-        padding: '10px',
-        width: '95%',
-        height: '15%',
-        backgroundColor: '#ffa800',
-        borderRadius: '8px'
-      }}>
-        {uniqueTags.map((tag) => (
-          <div key={tag.nome} style={{
-            display: 'flex',
-            alignItems: 'center',
-            flexBasis: 'calc(20% - 10px)',
-            boxSizing: 'border-box',
-            padding: '5px',
-            width: '200px',
-            height: 'initial',
-            borderRadius: '5px',
-            color: '#000000'
-          }}>
-            <div>
-              <p style={{ marginRight: '10px', fontWeight: 'bold', margin: 0 }}>{tag.nome}</p>
-              <input
-                type="checkbox"
-                checked={filtro.includes(tag.nome)}
-                onChange={() => handleFiltro(tag.nome)}
-                className='checkboxFiltro'
-              />
+        {isModalOpen && (
+          <>
+            <div className='tagsModal' onClick={() => setIsModalOpen(false)} />
+            <div className='containerModal'>
+              <h2 className='destaque'>Filtrar por tags</h2>
+              <div className='contentTags'>
+                {uniqueTags.map((tag) => (
+                  <div key={tag.nome} className='checkbox'>
+                      <input
+                        type="checkbox"
+                        name={tag.nome}
+                        id={`checkbox-${tag.nome}`} 
+                        checked={filtro.includes(tag.nome)}
+                        onChange={() => handleFiltro(tag.nome)}
+                        style={{ marginLeft: '10px' }}
+                      />
+                    <label  htmlFor={`checkbox-${tag.nome}`} style={{ marginRight: '10px', fontWeight: 'bold' }}>
+                      {tag.nome}
+                    </label>
+                  </div>
+                ))}
+              </div>
+              <button onClick={() => setIsModalOpen(false)} className='buttonFecharModal'>
+                Fechar
+              </button>
             </div>
-          </div>
-        ))}
+          </>
+        )}
       </div>
 
       <div className='pagProjetos'>
         <ProjetosRow Filtros={filtro} />
       </div>
-    </div>
+    </div >
   );
 }
 
