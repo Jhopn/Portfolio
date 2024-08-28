@@ -12,22 +12,28 @@ import prismaLogo from '../assets/Icons/Skills/prisma.webp';
 import springLogo from '../assets/Icons/Skills/spring-boot.webp';
 import typescriptLogo from '../assets/Icons/Skills/typescript.webp';
 import expressLogo from '../assets/Icons/Skills/express.webp';
+import bootstrapLogo from '../assets/Icons/Skills/bootstrap.webp';
+import materiaUILogo from '../assets/Icons/Skills/material-ui.webp';
+import sassLogo from '../assets/Icons/Skills/sass.webp';
 import '../styles/skills/skills.css';
 
 const logos = [
     { name: 'HTML', logo: htmlLogo },
     { name: 'CSS', logo: cssLogo },
+    { name: 'Sass', logo: sassLogo },
     { name: 'JavaScript', logo: javascriptLogo },
     { name: 'Node.js', logo: nodeLogo },
     { name: 'TypeScript', logo: typescriptLogo },
     { name: 'Java', logo: javaLogo },
     { name: 'Python', logo: pythonLogo },
     { name: 'React', logo: reactLogo },
+    { name: 'Material UI', logo: materiaUILogo },
     { name: 'MySQL', logo: sqlLogo },
     { name: 'MongoDB', logo: mongoLogo },
     { name: 'PostgreSQL', logo: postgresLogo },
     { name: 'Prisma', logo: prismaLogo },
     { name: 'Spring Boot', logo: springLogo },
+    { name: 'Bootstrap', logo: bootstrapLogo },
     { name: 'Express', logo: expressLogo }
 ];
 

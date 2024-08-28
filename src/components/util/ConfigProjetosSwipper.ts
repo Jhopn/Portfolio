@@ -47,9 +47,10 @@ export const projetosConfiguracao = [
         imagem: imagemProjeto2,
         nome: 'TimHontel',
         tags: [
-            { nome: 'Javascript', cor: '#f6df1c' },
             { nome: 'Html', cor: '#e44c26' },
-            { nome: 'Css', cor: '#274de5' }
+            { nome: 'Css', cor: '#274de5' },
+            { nome: 'Javascript', cor: '#f6df1c' },
+            { nome: 'Bootstrap', cor: '#7412F7' }
         ],
         descricao: 'Criação de layout',
         link: 'https://github.com/Jhopn/Timhontel'
