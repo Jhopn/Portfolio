@@ -42,7 +42,7 @@ function Projetos() {
           <>
             <div className='tagsModal' onClick={() => setIsModalOpen(false)} />
             <div className='containerModal'>
-              <h2 className='destaque'>Filtrar por tags</h2>
+              <h2 className='destaque'>FILTRAR POR TAG</h2>
               <div className='contentTags'>
                 {uniqueTags.map((tag) => (
                   <div key={tag.nome} className='checkbox'>

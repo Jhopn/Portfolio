@@ -10,9 +10,9 @@ export default function Footer() {
         </div>
         <div className='contatoFooter'>
           <p >SIGA-ME</p>
-          <a href="https://github.com/Jhopn">Github</a>
-          <a href="https://www.linkedin.com/in/jhoaosantos/">Linkedin</a>
-          <a href="https://www.instagram.com/jhoao_ns/">Instagram</a>
+          <a href="https://github.com/Jhopn" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/jhoaosantos/" target="_blank" >Linkedin</a>
+          <a href="https://www.instagram.com/jhoao_ns/" target="_blank">Instagram</a>
         </div>
       </footer>
     );

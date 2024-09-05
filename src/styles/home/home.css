@@ -27,6 +27,7 @@ html, body, #root {
   height: 320px;
   border-radius: 2rem;
   border: #ffa800 solid 2px;
+  background-color: #000000;
   overflow: hidden;
 }
 
@@ -34,6 +35,17 @@ html, body, #root {
   width: 0.9em;
   height: 0.9em;
   padding: 1em;
+  filter: invert(100%) brightness(100%);
+}
+
+.logo:hover{
+  filter: sepia(100%) saturate(600%) hue-rotate(10deg);
+}
+
+.logoContate {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.5rem;
 }
 
 .buttonInfo{
@@ -156,11 +168,28 @@ html, body, #root {
   border: 0px;
   border-radius: 12px;
   border: 1px solid #ffffff;
-  padding: 0.3rem;
+  padding: 1rem;
   font-size: 16px;
   height: 3rem;
   margin: 5px 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
+
+}
+
+.textArea{
+  width: 75%;
+  height: 200px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  background-color: #000000;
+  border: 0px;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  padding: 1rem;
+  font-size: 16px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
 .inputDados:focus {

@@ -1,6 +1,7 @@
-import perfil from '../assets/Icons/perfil2.webp';
+import perfil from '../assets/Icons/perfil.webp';
 import linkedinLogo from "../assets/Icons/ri_linkedin-fill.webp";
 import instaLogo from "../assets/Icons/bi_instagram.webp";
+// import zapLogo from "../assets/Icons/zap.webp";
 import '../styles/home/home.css';
 import { Skills } from '../components/Skills.tsx';
 import { Button } from '@mui/material';
@@ -8,14 +9,48 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { ProjetosSwiper } from "../components/ProjetosSwiper.js";
 import { useNavigate } from 'react-router-dom';
-
+import { useForm, ValidationError } from '@formspree/react';
 
 function Home() {
+  const [state, handleSubmit] = useForm("mblrbjpw");
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/projetos')
   }
+
+  if (state.succeeded) {
+    return <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      textAlign: 'center',
+      backgroundColor: '#000000'
+    }}>
+      <p style={{
+        fontSize: '1.5rem',
+        marginBottom: '1.5rem',
+        color: '#ffa800'
+      }}>
+        Mensagem enviada!
+      </p>
+      <Button size="medium" color="info" sx={{
+        backgroundColor: "#000000",
+        fontFamily: 'Arial',
+        border: '1px solid #ffffff',
+        color: "#ffffff",
+        '&:hover': {
+          color: '#ffa800',
+          border: '1px solid #ffa800',
+        },
+      }} onClick={() => window.location.reload()}>
+        Voltar à tela inicial
+      </Button>
+    </div>
+  }
+
   return (
     <>
       <div id='contentTotal'>
@@ -31,16 +66,18 @@ function Home() {
             <img src={perfil} className="perfilFoto" alt="Vite logo" />
 
             <div className='logosContatos'>
-              <a href="https://www.instagram.com/jhoao_ns/">
+              <a href="https://www.instagram.com/jhoao_ns/" target="_blank">
                 <img src={instaLogo} className="logo" alt="" />
               </a>
 
-              <a href="https://www.linkedin.com/in/jhoaosantos/">
+              <a href="https://www.linkedin.com/in/jhoaosantos/" target="_blank">
                 <img src={linkedinLogo} className="logo" alt="" />
               </a>
             </div>
 
-            <a href="" className='contate-me'>Contate-me</a>
+            <a href="https://w.app/R2tHGy" target="_blank" className='contate-me'>
+              Contate-me
+            </a>
           </div>
 
           <div className='contentor'>
@@ -96,27 +133,42 @@ function Home() {
 
           <p className='tagsAssunto'>Contato</p>
 
-          <div className='entreEmContato' id='contateme'>
+          <form onSubmit={handleSubmit} className='entreEmContato' id='contateme'>
             <h2>Entre em contato comigo!</h2>
-            <p>Nome Completo</p>
-            <input className='inputDados' type="text" placeholder='Digite o seu nome completo' name="" id="" />
-            <br />
+            <p> <span style={{color: '#ffffff'}}>Info:</span> Você também pode entrar em contato pelo meu <a href="https://w.app/R2tHGy" >whatsapp</a>!</p>
             <p>Email</p>
-            <input className='inputDados' type="text" placeholder='Digite o seu email' name="" id="" />
-            <br />
-            <p>Telefone</p>
-            <input className='inputDados' type="text" placeholder='+00 000 000 0000' name="" id="" />
-            <br />
-            <p>Mensagem</p>
             <input
               className='inputDados'
-              type="text"
-              placeholder='Escreva um breve resumo sobre seu projeto.'
-              id="mensagemInput"
+              placeholder='Digite o seu email'
+              id="email"
+              type="email"
+              name="email"
+              required
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
             <br />
-            <button id='buttonEnviar'>Enviar</button>
-          </div>
+            <p>Mensagem</p>
+            <textarea
+              className='textArea'
+              id="message"
+              name="message"
+              placeholder='Escreva um breve resumo sobre seu projeto'
+              required
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <br />
+            <button id='buttonEnviar' type='submit' disabled={state.submitting}>Enviar</button>
+          </form>
+
+
         </div>
 
       </div>
