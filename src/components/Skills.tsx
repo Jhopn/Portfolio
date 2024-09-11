@@ -15,6 +15,7 @@ import expressLogo from '../assets/Icons/Skills/express.webp';
 import bootstrapLogo from '../assets/Icons/Skills/bootstrap.webp';
 import materiaUILogo from '../assets/Icons/Skills/material-ui.webp';
 import sassLogo from '../assets/Icons/Skills/sass.webp';
+import mavenLogo from '../assets/Icons/Skills/maven.webp';
 import '../styles/skills/skills.css';
 
 const logos = [
@@ -25,6 +26,7 @@ const logos = [
     { name: 'Node.js', logo: nodeLogo },
     { name: 'TypeScript', logo: typescriptLogo },
     { name: 'Java', logo: javaLogo },
+    { name: 'Apache Maven', logo: mavenLogo },
     { name: 'Python', logo: pythonLogo },
     { name: 'React', logo: reactLogo },
     { name: 'Material UI', logo: materiaUILogo },

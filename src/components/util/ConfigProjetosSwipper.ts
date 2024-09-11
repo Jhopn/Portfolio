@@ -2,6 +2,7 @@ import imagemProjeto from '../../assets/Projetos/TaskApp/taskapp-home.webp';
 import imagemProjeto2 from '../../assets/Projetos/Timhontel/timhontel-navegue.webp';
 import imagemProjeto3 from '../../assets/Projetos/EcommerceApi/ecommerce.webp';
 import imagemProjeto4 from '../../assets/Projetos/MiniGameCalculator/Minigamecalculator.webp';
+import imagemProjeto5 from '../../assets/Projetos/ApiPlanner/api-planner.webp';
 
 export const projetosConfiguracao = [
     {
@@ -40,8 +41,20 @@ export const projetosConfiguracao = [
             { nome: 'Firebase', cor: '#f88008' },
             { nome: 'Expo Go', cor: '#000021' }
         ],
-        descricao: 'Criação de layout',
+        descricao: 'Mini jogo mobile de calcular expressões simples',
         link: 'https://github.com/Jhopn/Minigamecalculator'
+    },
+    {
+        imagem: imagemProjeto5,
+        nome: 'Api Planner',
+        tags: [
+            { nome: 'Java', cor: '#ec272c' },
+            { nome: 'Spring Boot', cor: '#72b545' },
+            { nome: 'Maven', cor: '#c42645' },
+            { nome: 'H2 Database', cor: '#114d70' }
+        ],
+        descricao: 'API para a criação de viajens com os amigos, incluindo atividades e links.',
+        link: 'https://github.com/Jhopn/Api-Planner/tree/master'
     },
     {
         imagem: imagemProjeto2,

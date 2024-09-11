@@ -75,7 +75,7 @@ function Home() {
               </a>
             </div>
 
-            <a href="https://w.app/R2tHGy" target="_blank" className='contate-me'>
+            <a href="https://api.whatsapp.com/send/?phone=559988320735&text&type=phone_number&app_absent=0" target="_blank" className='contate-me'>
               Contate-me
             </a>
           </div>
@@ -96,7 +96,10 @@ function Home() {
               '&:hover': {
                 border: '1px solid #ffa800'
               }
-            }}>Download CV</Button>
+            }}
+            href=".././assets/Curriculo/Curriculo.pdf" 
+            download="Curriculo.pdf"
+            >Download CV</Button>
           </div>
 
         </div>
@@ -135,7 +138,7 @@ function Home() {
 
           <form onSubmit={handleSubmit} className='entreEmContato' id='contateme'>
             <h2>Entre em contato comigo!</h2>
-            <p> <span style={{color: '#ffffff'}}>Info:</span> Você também pode entrar em contato pelo meu <a href="https://w.app/R2tHGy" >whatsapp</a>!</p>
+            <p> <span style={{color: '#ffffff'}}>Info:</span> Você também pode entrar em contato pelo meu <a href="https://api.whatsapp.com/send/?phone=559988320735&text&type=phone_number&app_absent=0"  target="_blank">whatsapp</a>!</p>
             <p>Email</p>
             <input
               className='inputDados'
