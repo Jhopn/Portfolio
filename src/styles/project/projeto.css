@@ -129,3 +129,17 @@
     justify-content: center;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: white;
+    background-color: black;
+  }
+}

@@ -97,7 +97,7 @@ function Home() {
                 border: '1px solid #ffa800'
               }
             }}
-            href=".././assets/Curriculo/Curriculo.pdf" 
+            href="/Curriculo.pdf" 
             download="Curriculo.pdf"
             >Download CV</Button>
           </div>

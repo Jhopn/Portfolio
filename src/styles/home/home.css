@@ -412,3 +412,17 @@ button:focus-visible {
 .custom-shape-divider-bottom-1724372019 .shape-fill {
     fill: #FFA800;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: white;
+    background-color: black;
+  }
+}
