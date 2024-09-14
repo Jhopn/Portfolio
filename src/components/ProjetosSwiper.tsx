@@ -2,9 +2,6 @@ import { MultiActionAreaCard } from "./MultiActionAreaCard.tsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { projetosConfiguracao } from './util/ConfigProjetosSwipper.ts';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 export function ProjetosSwiper() {
