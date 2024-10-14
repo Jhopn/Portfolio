@@ -1,7 +1,6 @@
 import perfil from '../assets/Icons/perfil.webp';
 import linkedinLogo from "../assets/Icons/ri_linkedin-fill.webp";
 import instaLogo from "../assets/Icons/bi_instagram.webp";
-// import zapLogo from "../assets/Icons/zap.webp";
 import '../styles/home/home.css';
 import { Skills } from '../components/Skills.tsx';
 import { Button } from '@mui/material';
@@ -94,7 +93,8 @@ function Home() {
               backgroundColor: "#000000",
               fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffa800",
               '&:hover': {
-                border: '1px solid #ffa800'
+                border: '1px solid #ffa800',
+                color: "#ffa800"
               }
             }}
             href="/Curriculo.pdf" 

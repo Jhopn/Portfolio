@@ -4,6 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import BasicModal  from '../components/Modal.tsx';
 import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -29,9 +30,13 @@ export function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProje
     window.open(link, '_blank')
   };
 
+  const handleModal = () =>{
+    <BasicModal/>
+  };
+
   return (
     <Card sx={{ maxWidth: 450, marginBottom: 5, height: 500 }}>
-      <CardActionArea onClick={handleClick}>
+      <CardActionArea onClick={handleModal}>
         <CardMedia
           height={280}
           component="img"

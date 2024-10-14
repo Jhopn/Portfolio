@@ -12,6 +12,8 @@ import prismaLogo from '../assets/Icons/Skills/prisma.webp';
 import springLogo from '../assets/Icons/Skills/spring-boot.webp';
 import typescriptLogo from '../assets/Icons/Skills/typescript.webp';
 import expressLogo from '../assets/Icons/Skills/express.webp';
+import nestLogo from '../assets/Icons/Skills/nest.webp';
+import adonisLogo from '../assets/Icons/Skills/adonis.webp';
 import bootstrapLogo from '../assets/Icons/Skills/bootstrap.webp';
 import materiaUILogo from '../assets/Icons/Skills/material-ui.webp';
 import sassLogo from '../assets/Icons/Skills/sass.webp';
@@ -36,7 +38,9 @@ const logos = [
     { name: 'Prisma', logo: prismaLogo },
     { name: 'Spring Boot', logo: springLogo },
     { name: 'Bootstrap', logo: bootstrapLogo },
-    { name: 'Express', logo: expressLogo }
+    { name: 'Express', logo: expressLogo },
+    { name: 'Nest', logo: nestLogo },
+    { name: 'Adonis', logo: adonisLogo }
 ];
 
 export function Skills() {
