@@ -222,15 +222,6 @@ html, body, #root {
   display: grid;
 }
 
-.imagemProjetos {
-  padding: 1px;
-}
-
-.imagemProjetos img {
-  flex: 0 0 auto;
-  pointer-events: none;
-}
-
 .carrosel {
   cursor: grab;
   overflow: hidden;

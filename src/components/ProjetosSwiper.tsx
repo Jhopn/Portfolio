@@ -16,7 +16,7 @@ export function ProjetosSwiper() {
           }}
           modules={[Pagination]}
           className="mySwiper"
-          style={{ margin: 10 }}
+          style={{ margin: -5 }}
         >
           {projetosConfiguracao.map((projeto, index) => (
             <SwiperSlide key={index}>

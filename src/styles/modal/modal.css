@@ -1,0 +1,52 @@
+.modalBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 80%; 
+    background-color: #ffa800;
+    border: 2px solid #000;
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    overflow-y: auto; 
+    text-align: center;
+}
+  
+.modalImagem {
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+}
+  
+.modalTitulo {
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    padding: 0rem;
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.acessarProjeto {
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 1rem 0rem;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.acessarProjeto + a{
+    
+}
+  
+.modalDescricao {
+    color: #000;
+}
+  

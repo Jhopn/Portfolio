@@ -6,7 +6,7 @@ import imagemProjeto5 from '../../assets/Projetos/ApiPlanner/api-planner.webp';
 
 export const projetosConfiguracao = [
     {
-        imagem: imagemProjeto3,
+        imagem: 'https://i.im.ge/2024/10/17/kAio2f.7.png',imagemProjeto3,
         nome: 'Ecommerce',
         tags: [
             { nome: 'NodeJs', cor: '#3e873e' },
@@ -19,7 +19,7 @@ export const projetosConfiguracao = [
         link: 'https://github.com/PHziinn/e-commerce_back-end'
     },
     {
-        imagem: imagemProjeto,
+        imagem: 'https://i.im.ge/2024/10/17/kAhni4.5.png',imagemProjeto,
         nome: 'Task App',
         tags: [
             { nome: 'React', cor: '#05d2fe' },
@@ -34,7 +34,7 @@ export const projetosConfiguracao = [
         link: 'https://github.com/Guilhermeprog3/Front-Task'
     },
     {
-        imagem: imagemProjeto4,
+        imagem: 'https://i.im.ge/2024/10/17/kAiMCP.1.png',imagemProjeto4,
         nome: 'MiniGameCalculator',
         tags: [
             { nome: 'React Native', cor: '#05d2fe' },
@@ -45,7 +45,7 @@ export const projetosConfiguracao = [
         link: 'https://github.com/Jhopn/Minigamecalculator'
     },
     {
-        imagem: imagemProjeto5,
+        imagem: 'https://i.im.ge/2024/10/17/kAiQv1.6.png',imagemProjeto5,
         nome: 'Api Planner',
         tags: [
             { nome: 'Java', cor: '#ec272c' },
@@ -57,7 +57,7 @@ export const projetosConfiguracao = [
         link: 'https://github.com/Jhopn/Api-Planner/tree/master'
     },
     {
-        imagem: imagemProjeto2,
+        imagem: 'https://i.im.ge/2024/10/17/kAhe7p.3.png',imagemProjeto2,
         nome: 'TimHontel',
         tags: [
             { nome: 'Html', cor: '#e44c26' },
