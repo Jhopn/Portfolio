@@ -88,7 +88,9 @@ export default function BasicModal({
                   style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover', // ou 'contain' dependendo do seu objetivo
+                    objectFit: index === 0 ? 'contain' : 'cover', // Use 'contain' para a primeira imagem quadrada
+                    maxHeight: '400px', // Limite para garantir que não extrapole
+                    maxWidth: '100%',
                   }}
                 />
               </SwiperSlide>
@@ -159,6 +161,7 @@ export default function BasicModal({
             Fechar
           </Button>
         </div>
+
       </Box>
     </Modal>
   );
