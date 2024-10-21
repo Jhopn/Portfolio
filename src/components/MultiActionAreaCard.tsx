@@ -1,127 +1,168 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
+import '../styles/modal/modal.css';
+import { DeviceFrameset } from 'react-device-frameset';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import BasicModal from '../components/Modal.tsx';
+import Typography from '@mui/material/Typography';
+// Estilos do Swiper
 import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/scrollbar';
-import React from 'react';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from 'swiper/modules';
 
 interface Tag {
   nome: string;
   cor: string;
 }
 
-interface MultiActionAreaCardProps {
-  imagemProjeto: string;
+interface BasicModalProps {
+  open: boolean;
+  handleClose: () => void;
+  handleClick: () => void;
+  imagemProjeto: string[];
   nomeProjeto: string;
-  descricaoProjeto: string;
+  descricao: string;
   tags: Tag[];
-  link: string;
 }
 
-export function MultiActionAreaCard({ imagemProjeto, nomeProjeto, descricaoProjeto, tags = [], link }: MultiActionAreaCardProps) {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  const handleClick = () => {
-    window.open(link, '_blank');
-  };
-
+export default function BasicModal({
+  open,
+  handleClose,
+  imagemProjeto = [],
+  nomeProjeto,
+  handleClick,
+  tags,
+  descricao,
+}: BasicModalProps) {
   return (
-    <>
-      <Card sx={{ maxWidth: 450, marginBottom: 5, height: 500 }}>
-        <CardActionArea onClick={handleOpen}>
-          <CardMedia
-            height={280}
-            component="img"
-            image={imagemProjeto}
-            alt={nomeProjeto}
-          />
-          <CardContent sx={{ backgroundColor: "#ffa800" }}>
-            <Swiper
-              spaceBetween={2}
-              slidesPerView={'auto'}
-              freeMode={true}
-              scrollbar={{ draggable: true, hide: false }}
-              style={{ width: '100%', padding: '10px 0' }}
-            >
-              {tags.map((tag, index) => (
-                <SwiperSlide key={index} style={{ width: 'auto' }}>
-                  <Typography
-                    sx={{
-                      color: '#ffffff',
-                      textShadow: '1px 2px 4px #000000',
-                      borderRadius: 1,
-                      padding: '5px 10px',
-                      margin: 0.5,
-                      textAlign: 'center',
-                      backgroundColor: tag.cor,
-                      fontFamily: 'Arial',
-                      cursor: 'pointer',
-                    }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    {tag.nome}
-                  </Typography>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+    <Modal
+      open={open}
+      onClose={handleClose}
+      className="modal-conteudo"
+    >
+      <Box className="modalBox">
+        {/* Carrossel de imagens dentro do DeviceFrameset */}
+        <DeviceFrameset device="iPhone 8" color="gold" landscape>
+          <div
+            className="swiper-button-prev"
+            style={{
+              transform: 'translateY(-50%)',
+              zIndex: 10,
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              color: '#fff',
+              padding: '10px',
+              cursor: 'pointer',
+              borderRadius: '50%',
+            }}
+          ></div>
+          <div
+            className="swiper-button-next"
+            style={{
+              transform: 'translateY(-50%)',
+              zIndex: 10,
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              color: '#fff',
+              padding: '10px',
+              cursor: 'pointer',
+              borderRadius: '50%',
+            }}
+          ></div>
+          <Swiper
+            pagination={{
+              type: 'fraction',
+            }}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {imagemProjeto.map((imagem, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={imagem}
+                  alt={`${nomeProjeto} - imagem ${index + 1}`}
+                  className="modalImagem"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: index === 0 ? 'contain' : 'cover', // Use 'contain' para a primeira imagem quadrada
+                    maxHeight: '400px', // Limite para garantir que não extrapole
+                    maxWidth: '100%',
+                  }}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </DeviceFrameset>
+
+        {/* Nome do Projeto */}
+        <p className="modalTitulo">
+          {nomeProjeto}
+        </p>
+
+        {/* Tags */}
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 2 }}>
+          {tags.map((tag, index) => (
             <Typography
-              gutterBottom
-              variant="h5"
+              key={index}
               sx={{
-                color: '#000000',
+                color: '#ffffff',
+                textShadow: '1px 2px 4px #000000',
+                borderRadius: 1,
+                padding: '5px 10px',
                 margin: 0.5,
+                textAlign: 'center',
+                backgroundColor: tag.cor,
                 fontFamily: 'Arial',
-                fontWeight: 'bold',
+                cursor: 'pointer',
               }}
-              component="div"
-            >
-              {nomeProjeto}
-            </Typography>
-            <Typography
               variant="body2"
-              sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Arial', height: 40 }}
+              color="text.secondary"
             >
-              {descricaoProjeto}
+              {tag.nome}
             </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions sx={{ backgroundColor: "#ffa800" }}>
+          ))}
+        </Box>
+
+        {/* Descrição do Projeto */}
+        <p className="modalDescricao">
+          {descricao}
+        </p>
+
+        <div className='modal-butoes'>
           <Button
-            size="medium"
-            color="info"
             onClick={handleClick}
             sx={{
               backgroundColor: "#000000",
               fontFamily: 'Arial',
               color: "#ffffff",
-              textTransform: "capitalize",
-              marginLeft: 1,
               '&:hover': {
-                color: '#ffa800',
-                backgroundColor: "#000000",
-              }
+                color: "#000000",
+              },
             }}
           >
-            Ver Mais
+            Acessar Projeto
           </Button>
-        </CardActions>
-      </Card>
-      <BasicModal
-        open={open}
-        handleClose={handleClose}
-        descricao={descricaoProjeto}
-        imagemProjeto={imagemProjeto}
-        nomeProjeto={nomeProjeto}
-        link={link}
-      />
-    </>
+
+          <Button
+            onClick={handleClose}
+            sx={{
+              backgroundColor: "#000000",
+              fontFamily: 'Arial',
+              color: "#ff0000",
+              '&:hover': {
+                color: "#000000",
+              },
+            }}
+          >
+            Fechar
+          </Button>
+        </div>
+
+      </Box>
+    </Modal>
   );
 }

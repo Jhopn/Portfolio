@@ -123,8 +123,9 @@ html, body, #root {
 .tagsAssunto {
   color: #ffa800;
   font-family: "Arial";
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 #titulo {
