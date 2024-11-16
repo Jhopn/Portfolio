@@ -24,7 +24,7 @@ export default function ButtonDetails({ onClick }: ButtonDetailsProps) {
       Detalhes
       <i
         className="fa-solid fa-eye"
-        style={{ marginLeft: "0.5rem" }}
+        style={{ marginLeft: "0.2rem" }}
         onClick={onClick}
       ></i>
     </Button>

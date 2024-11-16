@@ -32,7 +32,7 @@ export default function ButtonRepository({ link }: ButtonRepositoryProps) {
       {link && (
         <i
           className="fa-brands fa-github"
-          style={{ marginLeft: '0.5rem' }}
+          style={{ marginLeft: '0.2rem' }}
         ></i>
       )}
     </Button>

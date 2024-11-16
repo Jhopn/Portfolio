@@ -1,10 +1,10 @@
-import imagemProjeto from '../../assets/Projetos/TaskApp/taskapp-home.webp';
-import imagemProjeto2 from '../../assets/Projetos/Timhontel/timhontel-navegue.webp';
-import imagemProjeto4 from '../../assets/Projetos/MiniGameCalculator/Minigamecalculator.webp';
-import imagemProjeto5 from '../../assets/Projetos/ApiPlanner/api-planner.webp';
-
+import imagemTaskApp from '../../assets/Projetos/TaskApp/taskapp-home.webp';
+import imagemTimhontel from '../../assets/Projetos/Timhontel/timhontel-home.webp';
+import imagemMiniGameCalculator from '../../assets/Projetos/MiniGameCalculator/minigamecalculator.webp';
+import imagemMiniGameCalculator2 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-dark-mode.webp';
+import imagemMiniGameCalculator3 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator.webp';
+import imagemApiPlanner from '../../assets/Projetos/ApiPlanner/api-planner.webp';
 import imagemSlideEcommerceExpress from '../../assets/Projetos/EcommerceApi/ecommerceExpress.webp';
-
 import imagemCardEcommerceNest from '../../assets/Projetos/E-commerce/projetoEcommerce.webp';
 import imagemSliderEcommerceNest from '../../assets/Projetos/E-commerce/ecommerce-deve.webp';
 import imagemSliderEcommerceNest2 from '../../assets/Projetos/E-commerce/ecommerce-deve-footer.webp';
@@ -52,11 +52,11 @@ export const projetosConfiguracao = [
             { nome: 'Docker', cor: '#139edd' },
         ],
         descricao: 'Esta é uma API que oferece recursos para criar, gerenciar e integrar plataformas de comércio eletrônico. Ela permite operações de produtos, pedidos, clientes e carrinhos de compras, com autenticação baseada em tokens para segurança.',
-        link: 'https://github.com/PHziinn/e-commerce_back-end',
+        link: '',
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhni4.5.png',imagemProjeto],
+        imagem: ['https://i.im.ge/2024/10/17/kAhni4.5.png',imagemTaskApp],
         nome: 'Task App',
         tags: [
             { nome: 'React', cor: '#05d2fe' },
@@ -72,7 +72,7 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png',imagemProjeto4],
+        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png',imagemMiniGameCalculator, imagemMiniGameCalculator2, imagemMiniGameCalculator3],
         nome: 'MiniGameCalculator',
         tags: [
             { nome: 'React Native', cor: '#05d2fe' },
@@ -84,7 +84,7 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiQv1.6.png',imagemProjeto5],
+        imagem: ['https://i.im.ge/2024/10/17/kAiQv1.6.png',imagemApiPlanner],
         nome: 'Api Planner',
         tags: [
             { nome: 'Java', cor: '#ec272c' },
@@ -97,7 +97,7 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhe7p.3.png',imagemProjeto2],
+        imagem: ['https://i.im.ge/2024/10/17/kAhe7p.3.png',imagemTimhontel],
         nome: 'TimHontel',
         tags: [
             { nome: 'Html', cor: '#e44c26' },

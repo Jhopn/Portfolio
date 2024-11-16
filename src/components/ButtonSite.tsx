@@ -32,7 +32,7 @@ export default function ButtonSite({ linkSite }: ButtonSiteProps) {
       {linkSite && (
         <i
           className="fa-solid fa-link"
-          style={{ marginLeft: '0.5rem' }}
+          style={{ marginLeft: '0.2rem' }}
         ></i>
       )}
     </Button>
