@@ -1,7 +1,7 @@
 import imagemTaskApp from '../../assets/Projetos/TaskApp/taskapp-home.webp';
 import imagemTimhontel from '../../assets/Projetos/Timhontel/timhontel-home.webp';
 import imagemMiniGameCalculator from '../../assets/Projetos/MiniGameCalculator/minigamecalculator.webp';
-import imagemMiniGameCalculator2 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-dark-mode.webp';
+// import imagemMiniGameCalculator2 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-dark-mode.webp';
 import imagemMiniGameCalculator3 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator.webp';
 import imagemApiPlanner from '../../assets/Projetos/ApiPlanner/api-planner.webp';
 import imagemSlideEcommerceExpress from '../../assets/Projetos/EcommerceApi/ecommerceExpress.webp';
@@ -72,7 +72,7 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png',imagemMiniGameCalculator, imagemMiniGameCalculator2, imagemMiniGameCalculator3],
+        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png',imagemMiniGameCalculator, imagemMiniGameCalculator3],
         nome: 'MiniGameCalculator',
         tags: [
             { nome: 'React Native', cor: '#05d2fe' },
