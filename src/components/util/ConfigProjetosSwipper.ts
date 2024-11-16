@@ -10,6 +10,7 @@ import imagemSliderEcommerceNest from '../../assets/Projetos/E-commerce/ecommerc
 import imagemSliderEcommerceNest2 from '../../assets/Projetos/E-commerce/ecommerce-deve-footer.webp';
 import semImagem from '../../assets/Projetos/semimagem.webp';
 
+
 export const projetosConfiguracao = [
     {
         imagem: [imagemCardEcommerceNest, imagemSliderEcommerceNest, imagemSliderEcommerceNest2],
