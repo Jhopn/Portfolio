@@ -23,13 +23,19 @@
 
 .modalTitulo {
     margin-top: 1rem;
-    margin-bottom: 5px;
-    padding: 0rem;
-    font-size: 28px;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 26px; 
+    font-weight: 500; 
+    color: #000000; 
+    font-family: "Arial", sans-serif;
+    text-align: center; 
+    letter-spacing: 0.8px; 
+    border-bottom: 2px solid #000000; 
+    padding-bottom: 5px; 
+    text-transform: capitalize; 
 }
+
 
 .acessarProjeto {
     display: flex;
@@ -44,8 +50,33 @@
     text-transform: capitalize;
 }
 
+.topicoTitulo {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000; 
+    font-weight: bold;
+    font-family: "Arial", sans-serif; 
+    padding-bottom: 4px; 
+    letter-spacing: 0.5px; 
+}
+
+
 .modalDescricao {
-    color: #000;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #000000; 
+    font-family: "Arial", sans-serif; 
+    border-bottom: 2px solid #000000; 
+    padding-bottom: 5px; 
+    line-height: 1.5; 
+    letter-spacing: 0.2px; 
+    padding-left: 10px; 
 }
 
 .modal-butoes{
@@ -59,23 +90,38 @@
 }
 
 .modalBox::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 .modalBox::-webkit-scrollbar-thumb {
     background-color: #888;
-    border-radius: 10px;
 }
 
 .modalBox::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
-.modalBox {
+.modalBox.scrollable-element {
+    scrollbar-color: #888 #e0e0e0;
     scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
 }
+
+
 
 .swiper-pagination-fraction {
     color: #000000; 
+}
+
+.curved-edge {
+    --c: 70px; /* control the curvature (works with percentage) */
+    width: 100%;
+    left: 0px;
+    height: 200px;
+    aspect-ratio: 3/2;
+    position: absolute;
+    z-index: -9999;
+    top: 0px;
+    mask: radial-gradient(60% var(--c) at bottom,#0000 calc(100% - 2px),#000);
+    background: #ffffff;
 }

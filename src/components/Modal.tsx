@@ -5,7 +5,8 @@ import '../styles/modal/modal.css';
 import { DeviceFrameset } from 'react-device-frameset';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Typography from '@mui/material/Typography';
-// Estilos do Swiper
+import ButtonRepository from './ButtonRepository';
+import ButtonSite from './ButtonSite';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -19,11 +20,12 @@ interface Tag {
 interface BasicModalProps {
   open: boolean;
   handleClose: () => void;
-  handleClick: () => void;
   imagemProjeto: string[];
   nomeProjeto: string;
   descricao: string;
   tags: Tag[];
+  link: string;
+  linkSite: string;
 }
 
 export default function BasicModal({
@@ -31,7 +33,8 @@ export default function BasicModal({
   handleClose,
   imagemProjeto = [],
   nomeProjeto,
-  handleClick,
+  link,
+  linkSite,
   tags,
   descricao,
 }: BasicModalProps) {
@@ -41,8 +44,35 @@ export default function BasicModal({
       onClose={handleClose}
       className="modal-conteudo"
     >
-      <Box className="modalBox">
-        {/* Carrossel de imagens dentro do DeviceFrameset */}
+      <Box className="modalBox" sx={{
+        position: "relative",
+      }}>
+        <div className="curved-edge"/>
+        <Button
+          onClick={handleClose}
+          sx={{
+            position: "absolute",
+            top: "0px",
+            right: "0px",
+            backgroundColor: "rgba(180, 83, 107, 0.3)",
+            fontFamily: "Arial",
+            color: "#ffffff",
+            height: 40, 
+            width: 40, 
+            minWidth: 40, 
+            padding: 0,
+            zIndex: '10',
+            fontSize: "0.75rem", 
+            borderRadius: '100%', 
+            margin: 1,
+            '&:hover': {
+              backgroundColor: "red",
+            },
+          }}
+        >
+          X
+        </Button>
+
         <DeviceFrameset device="iPhone 8" color="gold" landscape>
           <div
             className="swiper-button-prev"
@@ -79,18 +109,21 @@ export default function BasicModal({
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
-            {imagemProjeto.map((imagem, index) => (
-              <SwiperSlide key={index}>
+            {imagemProjeto.slice(1).map((imagem, index) => (
+              <SwiperSlide key={index + 1}>
+                <p className="modalTitulo">
+                  {nomeProjeto}
+                </p>
                 <img
                   src={imagem}
-                  alt={`${nomeProjeto} - imagem ${index + 1}`}
+                  alt={`${nomeProjeto} - imagem ${index + 2}`}
                   className="modalImagem"
                   style={{
                     width: '100%',
-                    height: '100%',
-                    objectFit: index === 0 ? 'contain' : 'cover', // Use 'contain' para a primeira imagem quadrada
-                    maxHeight: '400px', // Limite para garantir que não extrapole
-                    maxWidth: '100%',
+                    height: '50%',
+                    borderRadius: '8px',
+                    marginBottom: '16px',
+                    objectFit: 'cover',
                   }}
                 />
               </SwiperSlide>
@@ -98,13 +131,9 @@ export default function BasicModal({
           </Swiper>
         </DeviceFrameset>
 
-        {/* Nome do Projeto */}
-        <p className="modalTitulo">
-          {nomeProjeto}
-        </p>
 
-        {/* Tags */}
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 2 }}>
+        <p className='topicoTitulo'>Ferramentas Usadas</p>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 2,  borderBottom: '2px solid #000000', paddingBottom: 2}}>
           {tags.map((tag, index) => (
             <Typography
               key={index}
@@ -126,40 +155,17 @@ export default function BasicModal({
             </Typography>
           ))}
         </Box>
+        
+        <div className='centralizadaDiv '>
+          <p className='topicoTitulo'>Descrição do Projeto</p>
+          <p className="modalDescricao">
+            {descricao}
+          </p>
+        </div>
 
-        {/* Descrição do Projeto */}
-        <p className="modalDescricao">
-          {descricao}
-        </p>
-
-        <div className='modal-butoes'>
-          <Button
-            onClick={handleClick}
-            sx={{
-              backgroundColor: "#000000",
-              fontFamily: 'Arial',
-              color: "#ffffff",
-              '&:hover': {
-                color: "#000000",
-              },
-            }}
-          >
-            Acessar Projeto
-          </Button>
-
-          <Button
-            onClick={handleClose}
-            sx={{
-              backgroundColor: "#000000",
-              fontFamily: 'Arial',
-              color: "#ff0000",
-              '&:hover': {
-                color: "#000000",
-              },
-            }}
-          >
-            Fechar
-          </Button>
+        <div style={{ backgroundColor: "#ffa800", display: 'flex', justifyContent: 'center', gap: 10 }}>
+          <ButtonRepository link={link} />
+          <ButtonSite linkSite={linkSite} />
         </div>
 
       </Box>

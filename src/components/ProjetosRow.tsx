@@ -33,6 +33,7 @@ export function ProjetosRow({ Filtros }: Filtro) {
             nomeProjeto={projeto.nome}
             tags={projeto.tags}
             link={projeto.link}
+            linkSite={projeto.linkSite}
             descricaoProjeto={projeto.descricao}
           />
         </div>

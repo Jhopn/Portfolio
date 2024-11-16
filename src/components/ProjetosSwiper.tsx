@@ -62,6 +62,7 @@ export function ProjetosSwiper() {
               nomeProjeto={projeto.nome}
               tags={projeto.tags}
               link={projeto.link}
+              linkSite={projeto.linkSite}
               descricaoProjeto={projeto.descricao}
             />
           </SwiperSlide>

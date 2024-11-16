@@ -2,7 +2,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
+import ButtonRepository  from './ButtonRepository.tsx'
+import ButtonSite from './ButtonSite.tsx'
+import ButtonDetails from './ButtonDetails.tsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import BasicModal from '../components/Modal.tsx';
 import 'swiper/css';
@@ -23,16 +26,14 @@ interface MultiActionAreaCardProps {
   descricaoProjeto: string;
   tags: Tag[];
   link: string;
+  linkSite: string;
 }
 
-export function MultiActionAreaCard({ imagemProjeto = [], nomeProjeto, descricaoProjeto, tags = [], link }: MultiActionAreaCardProps) {
+export function MultiActionAreaCard({ imagemProjeto = [], nomeProjeto, descricaoProjeto, tags = [], link, linkSite }: MultiActionAreaCardProps) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const handleClick = () => {
-    window.open(link, '_blank');
-  };
 
   return (
     <>
@@ -91,73 +92,23 @@ export function MultiActionAreaCard({ imagemProjeto = [], nomeProjeto, descricao
               variant="body2"
               sx={{ color: '#000000', marginLeft: 0.5, fontFamily: 'Arial', height: 40 }}
             >
-              {descricaoProjeto}
+              {descricaoProjeto.length > 80 ? descricaoProjeto.slice(0, 90) + "..." : descricaoProjeto}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions sx={{ backgroundColor: "#ffa800", display: 'flex', justifyContent: 'space-evenly' }}>
-          <Button
-            size="medium"
-            color="info"
-            onClick={handleOpen}
-            sx={{
-              backgroundColor: "#000000",
-              fontFamily: 'Arial',
-              color: "#ffffff",
-              textTransform: "capitalize",
-              '&:hover': {
-                color: '#ffa800',
-                backgroundColor: "#000000",
-              }
-            }}
-          >
-            Info
-            <i className="fa-solid fa-eye"  style={{ marginLeft: '0.5rem' }} onClick={handleOpen}></i>
-          </Button>
-          <Button
-            size="medium"
-            color="info"
-            onClick={handleOpen}
-            sx={{
-              backgroundColor: "#000000",
-              fontFamily: 'Arial',
-              color: "#ffffff",
-              textTransform: "capitalize",
-              '&:hover': {
-                color: '#ffa800',
-                backgroundColor: "#000000",
-              }
-            }}
-          >
-            Site
-            <i className="fa-solid fa-link"  style={{ marginLeft: '0.5rem' }} ></i>
-          </Button>
-          <Button
-            size="medium"
-            color="info"
-            onClick={handleClick}
-            sx={{
-              backgroundColor: "#000000",
-              fontFamily: 'Arial',
-              color: "#ffffff",
-              textTransform: "capitalize",
-              '&:hover': {
-                color: '#ffa800',
-                backgroundColor: "#000000",
-              }
-            }}
-          >
-            Repositório
-          <i className="fa-brands fa-github"  style={{ marginLeft: '0.5rem' }} onClick={handleClick}></i>
-          </Button>
+          <ButtonDetails onClick={handleOpen}/>
+          <ButtonSite linkSite={linkSite}/>
+          <ButtonRepository link={link}/>
         </CardActions>
       </Card>
       <BasicModal
+        link={link}
+        linkSite={linkSite}
         open={open}
         handleClose={handleClose}
         descricao={descricaoProjeto}
         imagemProjeto={imagemProjeto}
-        handleClick={handleClick}
         nomeProjeto={nomeProjeto}
         tags={tags}
       />

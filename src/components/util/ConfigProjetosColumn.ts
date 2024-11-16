@@ -14,7 +14,8 @@ export const projetosRow = [
             { nome: 'Javascript', cor: '#f6df1c' }
         ],
         descricao: 'Aplicação do protocolo Rdt para aprendizado e compreendimento do funcionamento do mesmo.',
-        link: 'https://github.com/LPeter-nm/rdt3.0-socket'
+        link: 'https://github.com/LPeter-nm/rdt3.0-socket',
+        linkSite: ''
     },
     {
         imagem: ['https://i.im.ge/2024/10/17/kAiX6m.8.png',imagemProjeto1],
@@ -25,7 +26,8 @@ export const projetosRow = [
             { nome: 'Expo Go', cor: '#000021' }
         ],
         descricao: 'Criação de um gerenciador de tarefas',
-        link: 'https://github.com/Jhopn/taskapp'
+        link: 'https://github.com/Jhopn/taskapp',
+        linkSite: ''
     },
     {
         imagem: ['https://i.im.ge/2024/10/17/kAiOgT.mylinks.png',imagemProjeto2],
@@ -35,7 +37,8 @@ export const projetosRow = [
             { nome: 'Css', cor: '#274de5' }
         ],
         descricao: 'Copia de layout do linktree com meus links',
-        link: 'https://github.com/Jhopn/My-links'
+        link: 'https://github.com/Jhopn/My-links',
+        linkSite: 'https://mylinktree-jhopn.vercel.app/'
     },
     {
         imagem: ['https://i.im.ge/2024/10/17/kAhBeq.2.png',imagemProjeto3],
@@ -46,6 +49,7 @@ export const projetosRow = [
             { nome: 'Javascript', cor: '#f6df1c' }
         ],
         descricao: 'Criação de um jogo com html, css e javascript',
-        link: 'https://github.com/Jhopn/CatEat'
+        link: 'https://github.com/Jhopn/CatEat',
+        linkSite: ''
     },
 ];
