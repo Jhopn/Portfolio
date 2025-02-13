@@ -18,6 +18,12 @@ import bootstrapLogo from '../assets/Icons/Skills/bootstrap.webp';
 import materiaUILogo from '../assets/Icons/Skills/material-ui.webp';
 import sassLogo from '../assets/Icons/Skills/sass.webp';
 import mavenLogo from '../assets/Icons/Skills/maven.webp';
+import nextLogo from '../assets/Icons/Skills/nextjs.webp';
+import tailwindLogo from '../assets/Icons/Skills/tailwind-css.webp';
+import reactNativeLogo from '../assets/Icons/Skills/android-phone.webp';
+import firebaseLogo from '../assets/Icons/Skills/firebase.webp';
+import supabaseLogo from '../assets/Icons/Skills/supabase.webp';
+import nginxLogo from '../assets/Icons/Skills/nginx.webp';
 import '../styles/skills/skills.css';
 
 const logos = [
@@ -31,6 +37,9 @@ const logos = [
     { name: 'Apache Maven', logo: mavenLogo },
     { name: 'Python', logo: pythonLogo },
     { name: 'React', logo: reactLogo },
+    { name: 'React Native', logo: reactNativeLogo },
+    { name: 'Next', logo: nextLogo },
+    { name: 'Tailwind CSS', logo: tailwindLogo },
     { name: 'Material UI', logo: materiaUILogo },
     { name: 'MySQL', logo: sqlLogo },
     { name: 'MongoDB', logo: mongoLogo },
@@ -40,7 +49,10 @@ const logos = [
     { name: 'Bootstrap', logo: bootstrapLogo },
     { name: 'Express', logo: expressLogo },
     { name: 'Nest', logo: nestLogo },
-    { name: 'Adonis', logo: adonisLogo }
+    { name: 'Adonis', logo: adonisLogo },
+    { name: 'Firebase', logo: firebaseLogo },
+    { name: 'Supabase', logo: supabaseLogo },
+    { name: 'Nginx', logo: nginxLogo }
 ];
 
 export function Skills() {

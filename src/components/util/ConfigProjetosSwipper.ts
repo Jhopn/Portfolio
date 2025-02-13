@@ -7,6 +7,23 @@ import imagemSlideEcommerceExpress from '../../assets/Projetos/EcommerceApi/ecom
 import imagemCardEcommerceNest from '../../assets/Projetos/E-commerce/projetoEcommerce.webp';
 import imagemSliderEcommerceNest from '../../assets/Projetos/E-commerce/ecommerce-deve.webp';
 import imagemSliderEcommerceNest2 from '../../assets/Projetos/E-commerce/ecommerce-deve-footer.webp';
+import imagemCardAnyRecipe from '../../assets/Projetos/AnyRecipe/capa_any_recipe.webp';
+import imagemSliderAnyRecipeLogin from '../../assets/Projetos/AnyRecipe/any_recipe_login.png';
+import imagemSliderAnyRecipeHome from '../../assets/Projetos/AnyRecipe/any_recipe_home.jpeg';
+import imagemSliderAnyRecipeIndex from '../../assets/Projetos/AnyRecipe/any_recipe_index.jpeg';
+import imagemSliderAnyRecipeNew from '../../assets/Projetos/AnyRecipe/any_recipe_new.jpeg';
+import imagemCardTodoList from '../../assets/Projetos/TodoList/capa_todo_list.webp';
+import imagemSliderTodolistLogin from '../../assets/Projetos/TodoList/todo_list_login.png';
+import imagemSliderTodolistHome from '../../assets/Projetos/TodoList/todo_list_home.png';
+import imagemSliderTodolistAdm from '../../assets/Projetos/TodoList/todo_list_adm.png';
+import imagemSliderTodolistPlaylist from '../../assets/Projetos/TodoList/todo_list_playlists.png';
+import imagemSliderTodolistRestore from '../../assets/Projetos/TodoList/todo_list_restore.png';
+import imagemSliderTodolistEmailToken from '../../assets/Projetos/TodoList/todo_list_email.png';
+
+
+
+
+
 import semImagem from '../../assets/Projetos/semimagem.webp';
 
 
@@ -27,6 +44,41 @@ export const projetosConfiguracao = [
         descricao: 'Criado como MVP(Minimo produto viavel) esse projeto teve como objetivo refazer o ecommerce anterior com um novo framework o NestJs, e para nos alinharmos como equipe. Neste projeto participei como analista de Backend e posteriormente participei da integração junto ao Frontend. Funcionalidades:  oferece recursos para criar, gerenciar e integrar plataformas de comércio eletrônico. Ela permite operações de produtos, pedidos, clientes e carrinhos de compras, com autenticação baseada em tokens para segurança. ',
         link: 'https://github.com/DeveloperCommunitty/E-commerce-back-end',
         linkSite: 'https://developerecommerce.netlify.app/home'
+    },
+    {
+        imagem: [imagemCardAnyRecipe, imagemSliderAnyRecipeLogin, imagemSliderAnyRecipeHome,imagemSliderAnyRecipeIndex, imagemSliderAnyRecipeNew],
+        nome: 'AnyRecipe',
+        tags: [
+            { nome: 'Typescript', cor: '#3178c6' },
+            { nome: 'NextJs', cor: '#000000' },
+            { nome: 'React', cor: '#05d2fe' },
+            { nome: 'Next Auth', cor: '#9C21D9' },
+            { nome: 'Tailwind', cor: '#00BCFF' },
+            { nome: 'NodeJs', cor: '#3e873e' },
+            { nome: 'Express', cor: '#000000' },
+            { nome: 'Prisma', cor: '#0d344b' },
+            { nome: 'Docker', cor: '#139edd' },
+        ],
+        descricao: ' Um aplicação que permite aos usuários explorar, cadastrar e favoritar receitas culinárias.	Funcionalidades principais: Tela inicial com lista de receitas divididas por categorias (sobremesas, massas, etc.). Busca por nome ou ingredientes. Cadastro de novas receitas com foto e descrição. Opção para marcar receitas como favoritas e acesso rápido às favoritas.       ',
+        link: 'https://github.com/LPeter-nm/recipe-front-end',
+        linkSite: ''
+    },
+    {
+        imagem: [imagemCardTodoList, imagemSliderTodolistLogin, imagemSliderTodolistAdm, imagemSliderTodolistHome,  imagemSliderTodolistPlaylist,  imagemSliderTodolistRestore,  imagemSliderTodolistEmailToken],
+        nome: 'TodoList',
+        tags: [
+            { nome: 'React', cor: '#05d2fe' },
+            { nome: 'React Query', cor: '#F05936' },
+            { nome: 'Material UI', cor: '#0081cc' },
+            { nome: 'NodeJs', cor: '#3e873e' },
+            { nome: 'NestJs', cor: '#e12965' },
+            { nome: 'Prisma', cor: '#0d344b' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Vite', cor: '#aa4cff' },
+        ],
+        descricao: 'Este projeto é um sistema simples onde os usuários podem: Fazer login para acessar uma lista de tarefas. Criar, editar, excluir e marcar tarefas como concluídas. com filtros de "Concluídas" e "Pendentes". Além de recuperar sua senha via um token enviado por email.',
+        link: 'https://github.com/DeveloperCommunitty/to-do-list_back-end',
+        linkSite: ''
     },
     {
         imagem: [semImagem],
