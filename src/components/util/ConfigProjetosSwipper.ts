@@ -35,7 +35,7 @@ export const projetosConfiguracao = [
         ],
         descricao: 'Criado como MVP(Minimo produto viavel) esse projeto teve como objetivo refazer o ecommerce anterior com um novo framework o NestJs, e para nos alinharmos como equipe. Neste projeto participei como analista de Backend e posteriormente participei da integração junto ao Frontend. Funcionalidades:  oferece recursos para criar, gerenciar e integrar plataformas de comércio eletrônico. Ela permite operações de produtos, pedidos, clientes e carrinhos de compras, com autenticação baseada em tokens para segurança. ',
         link: 'https://github.com/DeveloperCommunitty/E-commerce-back-end',
-        linkSite: 'https://developerecommerce.netlify.app/home'
+        linkSite: ''
     },
     {
         imagem: [imagemCardReport, imagemSliderCreateReport, imagemSliderHomeReport, imagemSliderModalExcluirReport],
