@@ -1,4 +1,6 @@
-import imagemApiPlanner from '../../assets/Projetos/ApiPlanner/api-planner.webp';
+import imagemCardApiPlanner from '../../assets/Projetos/ApiPlanner/capa_api_planner.png';
+import imagemSliderApiPlanner from '../../assets/Projetos/ApiPlanner/api-planner.webp';
+import imagemCardEcommerceExpress from '../../assets/Projetos/EcommerceApi/capa_ecommerce.png';
 import imagemSlideEcommerceExpress from '../../assets/Projetos/EcommerceApi/ecommerceExpress.webp';
 import imagemCardEcommerceNest from '../../assets/Projetos/E-commerce/projetoEcommerce.webp';
 import imagemSliderEcommerceNest from '../../assets/Projetos/E-commerce/ecommerce-deve.webp';
@@ -84,7 +86,7 @@ export const projetosConfiguracao = [
     },
 
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAio2f.7.png', imagemSlideEcommerceExpress],
+        imagem: [imagemCardEcommerceExpress, imagemSlideEcommerceExpress],
         nome: 'Ecommerce',
         tags: [
             { nome: 'NodeJs', cor: '#3e873e' },
@@ -109,7 +111,7 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiQv1.6.png', imagemApiPlanner],
+        imagem: [imagemCardApiPlanner, imagemSliderApiPlanner],
         nome: 'Api Planner',
         tags: [
             { nome: 'Java', cor: '#ec272c' },

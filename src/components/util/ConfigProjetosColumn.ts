@@ -1,5 +1,8 @@
-import imagemTaskManager from '../../assets/Projetos/TaskManager/gerenciador.webp';
+import imagemCardTaskManager from '../../assets/Projetos/TaskManager/task_manager_capa.png';
+import imagemTaskManager from '../../assets/Projetos/TaskManager/task_manager.webp';
+import imagemCardMyLinks from '../../assets/Projetos/MyLinks/my_links.webp';
 import imagemMylinks from '../../assets/Projetos/MyLinks/my_links.webp';
+import imagemCardCatEat from '../../assets/Projetos/GatoPidao/capa_gatopidao.png';
 import imagemCatEat from '../../assets/Projetos/GatoPidao/gato_pidao.webp';
 import imagemCardTodoList from '../../assets/Projetos/TodoList/capa_todo_list.webp';
 import imagemSliderTodolistLogin from '../../assets/Projetos/TodoList/todo_list_login.png';
@@ -8,8 +11,10 @@ import imagemSliderTodolistAdm from '../../assets/Projetos/TodoList/todo_list_ad
 import imagemSliderTodolistPlaylist from '../../assets/Projetos/TodoList/todo_list_playlists.png';
 import imagemSliderTodolistRestore from '../../assets/Projetos/TodoList/todo_list_restore.png';
 import imagemSliderTodolistEmailToken from '../../assets/Projetos/TodoList/todo_list_email.png';
+import imagemCardTaskApp from '../../assets/Projetos/TaskApp/capa_taskapp.png';
 import imagemTaskApp from '../../assets/Projetos/TaskApp/taskapp-home.webp';
 import semImagem from '../../assets/Projetos/semimagem.webp';
+import imagemCardMiniGameCalculator from '../../assets/Projetos/MiniGameCalculator/capa_minigame.png';
 import imagemMiniGameCalculator2 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-dark-mode.webp';
 import imagemMiniGameCalculator3 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-rank.webp';
 import imagemCardAnyRecipe from '../../assets/Projetos/AnyRecipe/capa_any_recipe.webp';
@@ -17,11 +22,13 @@ import imagemSliderAnyRecipeLogin from '../../assets/Projetos/AnyRecipe/any_reci
 import imagemSliderAnyRecipeHome from '../../assets/Projetos/AnyRecipe/any_recipe_home.jpeg';
 import imagemSliderAnyRecipeIndex from '../../assets/Projetos/AnyRecipe/any_recipe_index.jpeg';
 import imagemSliderAnyRecipeNew from '../../assets/Projetos/AnyRecipe/any_recipe_new.jpeg';
-import imagemTimhontel from '../../assets/Projetos/Timhontel/timhontel-home.webp';
+import imagemCardTimhontel from '../../assets/Projetos/Timhontel/capa_timhontel.png';
+import imagemTimhontel from '../../assets/Projetos/Timhontel/timhontel_home.webp';
+import imagemCardRdt from '../../assets/Projetos/Rdt/capa_rdt.png';
 
 export const projetosRow = [
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhe7p.3.png', imagemTimhontel],
+        imagem: [imagemCardTimhontel, imagemTimhontel],
         nome: 'TimHontel',
         tags: [
             { nome: 'Html', cor: '#e44c26' },
@@ -33,10 +40,6 @@ export const projetosRow = [
         link: 'https://github.com/Jhopn/Timhontel',
         linkSite: 'https://projeto-final-jhopn.vercel.app/'
     },
-
-
-
-
     {
         imagem: [imagemCardAnyRecipe, imagemSliderAnyRecipeLogin, imagemSliderAnyRecipeHome, imagemSliderAnyRecipeIndex, imagemSliderAnyRecipeNew],
         nome: 'AnyRecipe',
@@ -69,7 +72,7 @@ export const projetosRow = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png', imagemMiniGameCalculator2, imagemMiniGameCalculator3],
+        imagem: [imagemCardMiniGameCalculator, imagemMiniGameCalculator2, imagemMiniGameCalculator3],
         nome: 'MiniGameCalculator',
         tags: [
             { nome: 'React Native', cor: '#05d2fe' },
@@ -98,7 +101,7 @@ export const projetosRow = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhni4.5.png', imagemTaskApp],
+        imagem: [imagemCardTaskApp, imagemTaskApp],
         nome: 'Task App',
         tags: [
             { nome: 'React', cor: '#05d2fe' },
@@ -114,7 +117,7 @@ export const projetosRow = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAh4cC.4.png'],
+        imagem: [imagemCardRdt],
         nome: 'Rdt',
         tags: [
             { nome: 'NodeJs', cor: '#3e873e' },
@@ -128,7 +131,7 @@ export const projetosRow = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiX6m.8.png', imagemTaskManager],
+        imagem: [imagemCardTaskManager, imagemTaskManager],
         nome: 'Task Manager',
         tags: [
             { nome: 'React Native', cor: '#05d2fe' },
@@ -140,7 +143,7 @@ export const projetosRow = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiOgT.mylinks.png', imagemMylinks],
+        imagem: [imagemCardMyLinks, imagemMylinks],
         nome: 'My Links',
         tags: [
             { nome: 'Html', cor: '#e44c26' },
@@ -151,7 +154,7 @@ export const projetosRow = [
         linkSite: 'https://mylinktree-jhopn.vercel.app/'
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhBeq.2.png', imagemCatEat],
+        imagem: [imagemCardCatEat, imagemCatEat],
         nome: 'Cat Eat',
         tags: [
             { nome: 'Html', cor: '#e44c26' },
