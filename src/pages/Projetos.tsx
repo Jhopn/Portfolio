@@ -51,7 +51,7 @@ function Projetos() {
           <>
             <div className='tagsModal' onClick={() => setIsModalOpen(false)} />
             <div className='containerModal'>
-              <h2 className='destaque'>FILTRAR POR TAG</h2>
+              <h2 className='destaque'>Filtrar por Framework</h2>
               <div className='contentTags'>
                 {uniqueTags.map((tag) => (
                   <div key={tag.nome} className='checkbox'>
@@ -61,9 +61,8 @@ function Projetos() {
                       id={`checkbox-${tag.nome}`}
                       checked={filtro.includes(tag.nome)}
                       onChange={() => handleFiltro(tag.nome)}
-                      style={{ marginLeft: '10px' }}
                     />
-                    <label htmlFor={`checkbox-${tag.nome}`} style={{ marginRight: '10px', fontWeight: 'bold' }}>
+                    <label htmlFor={`checkbox-${tag.nome}`} >
                       {tag.nome}
                     </label>
                   </div>
