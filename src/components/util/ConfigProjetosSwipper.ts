@@ -1,31 +1,21 @@
-import imagemTaskApp from '../../assets/Projetos/TaskApp/taskapp-home.webp';
-import imagemTimhontel from '../../assets/Projetos/Timhontel/timhontel-home.webp';
-import imagemMiniGameCalculator2 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-dark-mode.webp';
-import imagemMiniGameCalculator3 from '../../assets/Projetos/MiniGameCalculator/minigamecalculator-rank.webp';
 import imagemApiPlanner from '../../assets/Projetos/ApiPlanner/api-planner.webp';
 import imagemSlideEcommerceExpress from '../../assets/Projetos/EcommerceApi/ecommerceExpress.webp';
 import imagemCardEcommerceNest from '../../assets/Projetos/E-commerce/projetoEcommerce.webp';
 import imagemSliderEcommerceNest from '../../assets/Projetos/E-commerce/ecommerce-deve.webp';
 import imagemSliderEcommerceNest2 from '../../assets/Projetos/E-commerce/ecommerce-deve-footer.webp';
-import imagemCardAnyRecipe from '../../assets/Projetos/AnyRecipe/capa_any_recipe.webp';
-import imagemSliderAnyRecipeLogin from '../../assets/Projetos/AnyRecipe/any_recipe_login.png';
-import imagemSliderAnyRecipeHome from '../../assets/Projetos/AnyRecipe/any_recipe_home.jpeg';
-import imagemSliderAnyRecipeIndex from '../../assets/Projetos/AnyRecipe/any_recipe_index.jpeg';
-import imagemSliderAnyRecipeNew from '../../assets/Projetos/AnyRecipe/any_recipe_new.jpeg';
-import imagemCardTodoList from '../../assets/Projetos/TodoList/capa_todo_list.webp';
-import imagemSliderTodolistLogin from '../../assets/Projetos/TodoList/todo_list_login.png';
-import imagemSliderTodolistHome from '../../assets/Projetos/TodoList/todo_list_home.png';
-import imagemSliderTodolistAdm from '../../assets/Projetos/TodoList/todo_list_adm.png';
-import imagemSliderTodolistPlaylist from '../../assets/Projetos/TodoList/todo_list_playlists.png';
-import imagemSliderTodolistRestore from '../../assets/Projetos/TodoList/todo_list_restore.png';
-import imagemSliderTodolistEmailToken from '../../assets/Projetos/TodoList/todo_list_email.png';
-
-
-
-
-
-import semImagem from '../../assets/Projetos/semimagem.webp';
-
+import imagemCardImadio from '../../assets/Projetos/Imadio/capa_imadio.png';
+import imagemSliderImadioHistorico from '../../assets/Projetos/Imadio/historico_imadio.png';
+import imagemSliderImadioHome from '../../assets/Projetos/Imadio/home_imadio.png';
+import imagemSliderImadioPersonalizar from '../../assets/Projetos/Imadio/personalizar_imadio.png';
+import imagemCardZelus from '../../assets/Projetos/Zelus/capa_zelus.png';
+import imagemSliderZelusApi from '../../assets/Projetos/Zelus/zelus_api.png';
+import imagemSliderZelusHomeMobile from '../../assets/Projetos/Zelus/zelus_home_mobile.png';
+import imagemSliderZelusPainel from '../../assets/Projetos/Zelus/painel_administrativo_zelus.jpeg';
+import imagemCardReport from '../../assets/Projetos/Report/capa_report.png';
+import imagemSliderCreateReport from '../../assets/Projetos/Report/criacao_report.png';
+import imagemSliderHomeReport from '../../assets/Projetos/Report/home_report.png';
+import imagemSliderModalExcluirReport from '../../assets/Projetos/Report/modal_excluir_report.png';
+import imagemCardSpotted from '../../assets/Projetos/Spotted/capa_spotted.png';
 
 export const projetosConfiguracao = [
     {
@@ -46,8 +36,8 @@ export const projetosConfiguracao = [
         linkSite: 'https://developerecommerce.netlify.app/home'
     },
     {
-        imagem: [imagemCardAnyRecipe, imagemSliderAnyRecipeLogin, imagemSliderAnyRecipeHome,imagemSliderAnyRecipeIndex, imagemSliderAnyRecipeNew],
-        nome: 'AnyRecipe',
+        imagem: [imagemCardReport, imagemSliderCreateReport, imagemSliderHomeReport, imagemSliderModalExcluirReport],
+        nome: 'Report',
         tags: [
             { nome: 'Typescript', cor: '#3178c6' },
             { nome: 'NextJs', cor: '#000000' },
@@ -55,44 +45,44 @@ export const projetosConfiguracao = [
             { nome: 'Next Auth', cor: '#9C21D9' },
             { nome: 'Tailwind', cor: '#00BCFF' },
             { nome: 'NodeJs', cor: '#3e873e' },
-            { nome: 'Express', cor: '#000000' },
+            { nome: 'NestJs', cor: '#e12965' },
             { nome: 'Prisma', cor: '#0d344b' },
             { nome: 'Docker', cor: '#139edd' },
         ],
-        descricao: ' Um aplicação que permite aos usuários explorar, cadastrar e favoritar receitas culinárias.	Funcionalidades principais: Tela inicial com lista de receitas divididas por categorias (sobremesas, massas, etc.). Busca por nome ou ingredientes. Cadastro de novas receitas com foto e descrição. Opção para marcar receitas como favoritas e acesso rápido às favoritas.       ',
-        link: 'https://github.com/LPeter-nm/recipe-front-end',
+        descricao: 'Desenvolvido conforme as necessidades do cliente, este sistema permite registrar mutirões realizados por uma empresa da área hospitalar. Conta com funcionalidades para exportar os dados dos pacientes em PDF e planilhas Excel, facilitando a gestão e o acompanhamento das informações.',
+        link: '',
         linkSite: ''
     },
     {
-        imagem: [imagemCardTodoList, imagemSliderTodolistLogin, imagemSliderTodolistAdm, imagemSliderTodolistHome,  imagemSliderTodolistPlaylist,  imagemSliderTodolistRestore,  imagemSliderTodolistEmailToken],
-        nome: 'TodoList',
+        imagem: [imagemCardImadio, imagemSliderImadioHistorico, imagemSliderImadioHome, imagemSliderImadioPersonalizar],
+        nome: 'Imadio',
         tags: [
-            { nome: 'React', cor: '#05d2fe' },
-            { nome: 'React Query', cor: '#F05936' },
-            { nome: 'Material UI', cor: '#0081cc' },
+            { nome: 'React Native', cor: '#05d2fe' },
+            { nome: 'Expo Go', cor: '#000021' },
             { nome: 'NodeJs', cor: '#3e873e' },
             { nome: 'NestJs', cor: '#e12965' },
             { nome: 'Prisma', cor: '#0d344b' },
             { nome: 'Docker', cor: '#139edd' },
-            { nome: 'Vite', cor: '#aa4cff' },
+            { nome: 'Python', cor: '#fed639' },
         ],
-        descricao: 'Este projeto é um sistema simples onde os usuários podem: Fazer login para acessar uma lista de tarefas. Criar, editar, excluir e marcar tarefas como concluídas. com filtros de "Concluídas" e "Pendentes". Além de recuperar sua senha via um token enviado por email.',
-        link: 'https://github.com/DeveloperCommunitty/to-do-list_back-end',
+        descricao: 'Projeto desenvolvido como Trabalho de Conclusão de Curso em Sistemas para Internet. O Imadio é um aplicativo voltado para pessoas com deficiência visual, permitindo converter imagens em texto por meio de uma API de inteligência artificial, e posteriormente salvar essas conversões em um banco de dados para consulta futura.',
+        link: '',
         linkSite: ''
     },
     {
-        imagem: [semImagem],
-        nome: 'Entrega de trabalhos',
+        imagem: [imagemCardZelus, imagemSliderZelusApi, imagemSliderZelusHomeMobile, imagemSliderZelusPainel],
+        nome: 'Zelus',
         tags: [
-            { nome: 'Typescript', cor: '#3178c6' },
             { nome: 'NodeJs', cor: '#3e873e' },
-            { nome: 'AdonisJs', cor: '#5a45fe' },
+            { nome: 'AdonisJs', cor: '#5845ff' },
+            { nome: 'Prisma', cor: '#0d344b' },
             { nome: 'Docker', cor: '#139edd' },
         ],
-        descricao: 'Sistema para que professores acompanhem a entrega de trabalhos pelos alunos e mantenham um registro das notas. Este projeto é uma API que gerencia Sessões, Trabalhos, Realizações, Turmas, Alunos, Professores e Aulas, oferecendo rotas CRUD protegidas por autenticação quando necessário.',
-        link: 'https://github.com/LPeter-nm/api_entrega_trabalhos',
+        descricao: 'Aplicativo voltado à cidadania ativa, o Zelus permite que usuários registrem e compartilhem fotos e vídeos de problemas urbanos como buracos, entulhos e outras demandas ignoradas pelo poder público. A solução conta com autenticação de usuários, sistema de comentários, painel administrativo completo para gestão das postagens e foi desenvolvida com backend sob minha liderança.',
+        link: '',
         linkSite: ''
     },
+
     {
         imagem: ['https://i.im.ge/2024/10/17/kAio2f.7.png', imagemSlideEcommerceExpress],
         nome: 'Ecommerce',
@@ -108,35 +98,18 @@ export const projetosConfiguracao = [
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAhni4.5.png',imagemTaskApp],
-        nome: 'Task App',
+        imagem: [imagemCardSpotted],
+        nome: 'Spotted',
         tags: [
-            { nome: 'React', cor: '#05d2fe' },
-            { nome: 'Material UI', cor: '#0081cc' },
-            { nome: 'Vite', cor: '#aa4cff' },
-            { nome: 'Typescript', cor: '#3178c6' },
             { nome: 'NodeJs', cor: '#3e873e' },
-            { nome: 'Express', cor: '#222323' },
-            { nome: 'Prisma', cor: '#0d344b' }
-        ],
-        descricao: 'Projeto feito para a gerenciamento de tarefas pelo usuario, incluindo o frontend e o backend, tive participação em ambas as partes. Funcionalidades: Criar, Apagar, Alterar e Colocar a tarefa como concluida, além disso o úsuario tem um perfil contendo suas informações.',
-        link: 'https://github.com/Guilhermeprog3/Front-Task',
-        linkSite: ''
-    },
-    {
-        imagem: ['https://i.im.ge/2024/10/17/kAiMCP.1.png', imagemMiniGameCalculator2, imagemMiniGameCalculator3],
-        nome: 'MiniGameCalculator',
-        tags: [
-            { nome: 'React Native', cor: '#05d2fe' },
             { nome: 'Firebase', cor: '#f88008' },
-            { nome: 'Expo Go', cor: '#000021' }
         ],
-        descricao: 'Aplicativo para celular criado para aprender expressões matematicas enquanto se diverte e compete através do rank presente no jogo. Funcinalidades: É possivel criar sua conta e jogar, seus pontos são salvos dentro da tabela geral de pontuação.',
-        link: 'https://github.com/Jhopn/Minigamecalculator',
+        descricao: 'Aplicativo desenvolvido com arquitetura NoSQL e integração completa com o Firebase. O Spotted foi idealizado pelo cliente e contou com minha contribuição direta na construção da API, garantindo performance, escalabilidade e segurança para o armazenamento e acesso aos dados.',
+        link: '',
         linkSite: ''
     },
     {
-        imagem: ['https://i.im.ge/2024/10/17/kAiQv1.6.png',imagemApiPlanner],
+        imagem: ['https://i.im.ge/2024/10/17/kAiQv1.6.png', imagemApiPlanner],
         nome: 'Api Planner',
         tags: [
             { nome: 'Java', cor: '#ec272c' },
@@ -148,17 +121,4 @@ export const projetosConfiguracao = [
         link: 'https://github.com/Jhopn/Api-Planner/tree/master',
         linkSite: ''
     },
-    {
-        imagem: ['https://i.im.ge/2024/10/17/kAhe7p.3.png',imagemTimhontel],
-        nome: 'TimHontel',
-        tags: [
-            { nome: 'Html', cor: '#e44c26' },
-            { nome: 'Css', cor: '#274de5' },
-            { nome: 'Javascript', cor: '#f6df1c' },
-            { nome: 'Bootstrap', cor: '#7412F7' }
-        ],
-        descricao: 'Projeto para fixação do aprendizado de html e css, Timhontel foi criado totalmente por mim inspirado em alguns designs pertinentes ao tema.',
-        link: 'https://github.com/Jhopn/Timhontel',
-        linkSite: 'https://projeto-final-jhopn.vercel.app/'
-    }
 ];

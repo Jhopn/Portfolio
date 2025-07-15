@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import { ProjetosSwiper } from "../components/ProjetosSwiper.js";
 import { useNavigate } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
+import { Wavify } from '../components/Wavify.tsx';
 
 function Home() {
   const [state, handleSubmit] = useForm("mblrbjpw");
@@ -53,12 +54,7 @@ function Home() {
   return (
     <>
       <div id='contentTotal'>
-
-        <div className="custom-shape-divider-top-1724337576">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
-          </svg>
-        </div>
+        <Wavify />
 
         <div className='container'>
           <div className='perfilConfig'>
@@ -97,8 +93,8 @@ function Home() {
                 color: "#ffa800"
               }
             }}
-            href="/Curriculo.pdf" 
-            download="Curriculo.pdf"
+              href="/Curriculo.pdf"
+              download="Curriculo.pdf"
             >Download CV</Button>
           </div>
 
@@ -114,7 +110,7 @@ function Home() {
           <p className='tagsAssunto'>Projetos</p>
 
           <div className='textoProjeto'>
-            <p>Alguns dos projetos que participei:</p>
+            <p>Projetos que participei:</p>
             <Button size="medium" color="info" sx={{
               backgroundColor: "#000000",
               fontFamily: 'Arial', border: '1px solid #ffffff', color: "#ffffff", marginLeft: 1,
@@ -138,7 +134,7 @@ function Home() {
 
           <form onSubmit={handleSubmit} className='entreEmContato' id='contateme'>
             <h2>Entre em contato comigo!</h2>
-            <p> <span style={{color: '#ffffff'}}>Info:</span> Você também pode entrar em contato pelo meu <a href="https://api.whatsapp.com/send/?phone=559988320735&text&type=phone_number&app_absent=0"  target="_blank">whatsapp</a>!</p>
+            <p> <span style={{ color: '#ffffff' }}>Info:</span> Você também pode entrar em contato pelo meu <a href="https://api.whatsapp.com/send/?phone=559988320735&text&type=phone_number&app_absent=0" target="_blank">whatsapp</a>!</p>
             <p>Email</p>
             <input
               className='inputDados'
