@@ -18,8 +18,22 @@ import imagemSliderCreateReport from '../../assets/Projetos/Report/criacao_repor
 import imagemSliderHomeReport from '../../assets/Projetos/Report/home_report.png';
 import imagemSliderModalExcluirReport from '../../assets/Projetos/Report/modal_excluir_report.png';
 import imagemCardSpotted from '../../assets/Projetos/Spotted/capa_spotted.png';
+import capaSei from '../../assets/Projetos/PortalSEI/capa-sei.png';
+import imagemSeiHomeTop from '../../assets/Projetos/PortalSEI/home-sei-top.png';
+import imagemSeiHomeBottom from '../../assets/Projetos/PortalSEI/home-sei-bottom.png';
 
 export const projetosConfiguracao = [
+    {
+        imagem: [capaSei,imagemSeiHomeTop, imagemSeiHomeBottom],
+        nome: 'Portal SEI',
+        tags: [
+            { nome: 'Wordpress', cor: '#21749b' },
+            { nome: 'PHP', cor: '#767ab3' },
+        ],
+        descricao: 'Projeto desenvolvido para a Prefeitura Municipal de Timon, o Portal SEI é uma plataforma de gestão documental que integra o Sistema Eletrônico de Informações (SEI) com o site institucional da prefeitura. O objetivo principal é facilitar o acesso dos cidadãos aos serviços públicos, permitindo a consulta e o acompanhamento de processos administrativos de forma transparente e eficiente. O portal foi customizado para atender às necessidades específicas da administração municipal, garantindo uma interface amigável e funcionalidades que promovem a participação cidadã.',
+        link: '',
+        linkSite: 'https://portalsei.timon.ma.gov.br/'
+    },
     {
         imagem: [imagemCardEcommerceNest, imagemSliderEcommerceNest, imagemSliderEcommerceNest2],
         nome: 'E-commerce',
