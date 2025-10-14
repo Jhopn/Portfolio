@@ -80,7 +80,7 @@ function Home() {
             <h1 id='titulo'>Jhoão Pedro,<span className='subtitulo'> desenvolvedor Full Stack.</span> </h1>
 
 
-            <p className='resumo'>Sou estudante de Sistema para Internet no
+            <p className='resumo'>Sou graduado em Sistema para Internet no
               <span className='destaque'> IFMA Campus Timon </span>
               e participo da
               <span className='destaque'> Developer Community </span>
