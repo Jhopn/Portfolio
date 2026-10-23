@@ -1,61 +1,80 @@
 .footer {
+    margin-top: 6rem;
+    background-color: var(--orange);
+    color: #000000;
+    position: relative;
+}
+
+.footerConteudo {
+    width: min(1200px, 100% - 2rem);
+    margin: 0 auto;
     display: flex;
-    padding: 0.2rem 5rem;
-    background-color: #ffa800;
-    color: black;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 0 2rem 0;
+}
+
+.footerMarca {
+    display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .footerLogo {
-    text-align: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
 }
 
-.footerLogo p {
-    font-weight: 500;
-}
-
-.contatoFooter {
-    display: grid;
-    text-align: left;
-    margin-left: 2rem;
-    border-left: #000000 1px solid;
-    padding-left: 1rem;
-}
-
-.contatoFooter p {
-    font-family: "Arial";
+.footerNome {
+    font-family: var(--font-title);
+    font-size: 22px;
     font-weight: 700;
 }
 
-.contatoFooter a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000000;
-    font-family: "Arial";
-    font-weight: 500;
+.footerCargo {
     font-size: 15px;
-    margin-bottom: 0.7rem;
+    opacity: 0.75;
 }
 
-a:hover{
-    color: #ffffff;
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
-#imgfooter {
-    width: 108px;
-    height: 108px;
-    margin: 0.2rem;
+.footerTitulo {
+    font-family: var(--font-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 0.25rem;
 }
 
+.footerLinks a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    transition: transform 0.2s var(--ease);
+}
 
-@media (max-width: 768px) {
-    .footer{
-        padding: 1rem;
-    }
+.footerLinks a i {
+    width: 18px;
+    text-align: center;
+}
 
-    #imgfooter {
-        width: 88px;
-        height: 88px;
-    }
+.footerLinks a:hover {
+    transform: translateX(4px);
+}
+
+.footerCopy {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    font-weight: 500;
 }

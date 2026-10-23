@@ -1,41 +1,36 @@
-import { MultiActionAreaCard } from "./MultiActionAreaCard.tsx";
-import { projetosConfiguracao } from "./util/ConfigProjetosSwipper.ts";
+import type { CSSProperties } from 'react';
+import { ProjetoCard } from './ProjetoCard.tsx';
+import { projetosConfiguracao } from './util/ConfigProjetosSwipper.ts';
 import { projetosRow } from './util/ConfigProjetosColumn.ts';
-import  { useEffect, useState } from  'react';
-import '../styles/projetosRow/projetosRow.css'
+import { useReveal } from '../hooks/useReveal.ts';
+import '../styles/projetosRow/projetosRow.css';
 
-const todosProjetos = [...projetosConfiguracao, ...projetosRow];
+export const todosProjetos = [...projetosConfiguracao, ...projetosRow];
 
 interface Filtro {
   Filtros: string[];
 }
 
 export function ProjetosRow({ Filtros }: Filtro) {
-  const [projetosFiltrados, setProjetosFiltrados] = useState(todosProjetos);
+  const projetosFiltrados = Filtros.length === 0
+    ? todosProjetos
+    : todosProjetos.filter(projeto => projeto.tags.some(tag => Filtros.includes(tag.nome)));
 
-  useEffect(() => {
-    if (Filtros.length === 0) {
-      setProjetosFiltrados(todosProjetos);
-    } else {
-      const novosProjetosFiltrados = todosProjetos.filter(projeto =>
-        projeto.tags.some(tag => Filtros.includes(tag.nome))
-      );
-      setProjetosFiltrados(novosProjetosFiltrados);
-    }
-  }, [Filtros]);
+  useReveal([Filtros]);
+
+  if (projetosFiltrados.length === 0) {
+    return <p className="projetosVazio">Nenhum projeto encontrado com esses filtros.</p>;
+  }
 
   return (
     <div className="cardProjetos">
       {projetosFiltrados.map((projeto, index) => (
-        <div key={index} className="containerContent">
-          <MultiActionAreaCard
-            imagemProjeto={projeto.imagem}
-            nomeProjeto={projeto.nome}
-            tags={projeto.tags}
-            link={projeto.link}
-            linkSite={projeto.linkSite}
-            descricaoProjeto={projeto.descricao}
-          />
+        <div
+          key={projeto.nome}
+          className="reveal"
+          style={{ '--d': `${(index % 3) * 0.08}s` } as CSSProperties}
+        >
+          <ProjetoCard projeto={projeto} />
         </div>
       ))}
     </div>
