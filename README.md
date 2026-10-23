@@ -42,7 +42,7 @@ Portfólio pessoal com meus projetos, experiências e habilidades. Sou graduado 
 
 ## Como rodar
 
-Pré-requisito: Node.js 18 ou superior.
+Pré-requisito: Node.js 24 ou superior (o deploy na Vercel usa o Node 24).
 
 ```bash
 # instalar as dependências
