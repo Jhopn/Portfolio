@@ -21,8 +21,91 @@ import imagemCardSpotted from '../../assets/Projetos/Spotted/capa_spotted.png';
 import capaSei from '../../assets/Projetos/PortalSEI/capa-sei.png';
 import imagemSeiHomeTop from '../../assets/Projetos/PortalSEI/home-sei-top.png';
 import imagemSeiHomeBottom from '../../assets/Projetos/PortalSEI/home-sei-bottom.png';
+import imagemOportunidadesHome from '../../assets/Projetos/PiauiOportunidades/home_oportunidades.png';
+import imagemOportunidadesCompleto from '../../assets/Projetos/PiauiOportunidades/oportunidades_completo.png';
+import imagemPiauiEmDadosHome from '../../assets/Projetos/PiauiEmDados/home_piaui_em_dados.png';
+import imagemSuapLogin from '../../assets/Projetos/Suap/login_suap.png';
+import imagemSgcHome from '../../assets/Projetos/SGC/home_sgc.png';
+import semImagem from '../../assets/Projetos/semimagem.webp';
 
 export const projetosConfiguracao = [
+    {
+        imagem: [imagemOportunidadesHome, imagemOportunidadesCompleto],
+        nome: 'Piauí Oportunidades',
+        tags: [
+            { nome: 'Vue', cor: '#42b883' },
+            { nome: 'NodeJs', cor: '#3e873e' },
+            { nome: 'NestJs', cor: '#e12965' },
+            { nome: 'Python', cor: '#fed639' },
+            { nome: 'Inteligência Artificial', cor: '#10a37f' },
+            { nome: 'PostgreSQL', cor: '#336791' },
+            { nome: 'Redis', cor: '#dc382d' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Jenkins', cor: '#d24939' },
+            { nome: 'Grafana', cor: '#f46800' },
+            { nome: 'Prometheus', cor: '#e6522c' },
+        ],
+        descricao: 'Plataforma oficial do Governo do Piauí que conecta jovens talentos a oportunidades de emprego, estágio e desenvolvimento profissional. Reúne três perfis — candidato, empresa e autônomo — permitindo buscar e divulgar vagas, acessar cursos gratuitos de parceiros e acompanhar editais públicos. Conta com integração com inteligência artificial, incluindo a assistente virtual "Naza", que orienta os usuários dentro da plataforma.',
+        link: '',
+        linkSite: 'https://piauioportunidades.pi.gov.br/'
+    },
+    {
+        imagem: [imagemPiauiEmDadosHome],
+        nome: 'Piauí em Dados',
+        tags: [
+            { nome: 'React', cor: '#05d2fe' },
+            { nome: 'NodeJs', cor: '#3e873e' },
+            { nome: 'Express', cor: '#222323' },
+            { nome: 'PostgreSQL', cor: '#336791' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Jenkins', cor: '#d24939' },
+        ],
+        descricao: 'Plataforma digital do Governo do Piauí que centraliza informações estratégicas para impulsionar novos negócios e identificar oportunidades no estado. Oferece mapas interativos, dashboards analíticos, painel de negócios e relatórios de inteligência que transformam dados públicos em conhecimento acessível, integrando também iniciativas como o "Por que o Piauí?" e o Observatório de Startups.',
+        link: '',
+        linkSite: 'https://piauiemdados.pi.gov.br/'
+    },
+    {
+        imagem: [imagemSuapLogin],
+        nome: 'SUAP',
+        tags: [
+            { nome: 'Python', cor: '#fed639' },
+            { nome: 'Django', cor: '#0c4b33' },
+            { nome: 'PostgreSQL', cor: '#336791' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Jenkins', cor: '#d24939' },
+        ],
+        descricao: 'O SUAP (Sistema Unificado de Administração Pública) é um sistema de gestão institucional desenvolvido originalmente pelo IFRN e adaptado para o PIT. Atuo na manutenção e evolução do sistema, que integra módulos de processos eletrônicos, contratos, gestão de pessoas, ensino, extensão e auditoria, além de serviços públicos como validação de documentos e emissão de certificados.',
+        link: '',
+        linkSite: 'https://suap.pit.pi.gov.br/accounts/login/?next=/'
+    },
+    {
+        imagem: [imagemSgcHome],
+        nome: 'SGC',
+        tags: [
+            { nome: 'Python', cor: '#fed639' },
+            { nome: 'Django', cor: '#0c4b33' },
+            { nome: 'PostgreSQL', cor: '#336791' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Jenkins', cor: '#d24939' },
+        ],
+        descricao: 'O SGC (Sistema de Gestão de Concursos) é a plataforma de processos seletivos do PIT. Por meio do Portal do Candidato, os participantes realizam cadastro, inscrição, consulta de editais e acompanhamento das etapas de cada seleção, enquanto a equipe administrativa gerencia todo o ciclo dos processos seletivos.',
+        link: '',
+        linkSite: 'https://hml.concursos.pit.pi.gov.br/'
+    },
+    {
+        imagem: [semImagem],
+        nome: 'Dataroom',
+        tags: [
+            { nome: 'Python', cor: '#fed639' },
+            { nome: 'Django', cor: '#0c4b33' },
+            { nome: 'PostgreSQL', cor: '#336791' },
+            { nome: 'Docker', cor: '#139edd' },
+            { nome: 'Jenkins', cor: '#d24939' },
+        ],
+        descricao: 'Sistema de uso interno para armazenamento, organização e compartilhamento controlado de documentos e informações estratégicas. Por ser uma ferramenta interna, não possui acesso público.',
+        link: '',
+        linkSite: ''
+    },
     {
         imagem: [capaSei,imagemSeiHomeTop, imagemSeiHomeBottom],
         nome: 'Portal SEI',
@@ -81,7 +164,7 @@ export const projetosConfiguracao = [
             { nome: 'Docker', cor: '#139edd' },
             { nome: 'Python', cor: '#fed639' },
         ],
-        descricao: 'Projeto desenvolvido como Trabalho de Conclusão de Curso em Sistemas para Internet. O Imadio é um aplicativo voltado para pessoas com deficiência visual, permitindo converter imagens em texto por meio de uma API de inteligência artificial, e posteriormente salvar essas conversões em um banco de dados para consulta futura.',
+        descricao: 'Projeto desenvolvido como Trabalho de Conclusão de Curso em Sistemas para Internet. O Imadio é um aplicativo voltado para pessoas com deficiência visual, permitindo converter imagens em texto por meio de uma API de inteligência artificial, e posteriormente salvar essas conversões em um banco de dados para consulta futura. O software é registrado no INPI sob o número BR512026003642-9.',
         link: '',
         linkSite: ''
     },

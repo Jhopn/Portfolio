@@ -1,0 +1,208 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--orange), rgba(255, 168, 0, 0.1));
+}
+
+.timelineItem {
+  position: relative;
+  padding: 1.5rem 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease), border-color 0.3s, box-shadow 0.3s;
+}
+
+.timelineItem:hover {
+  border-color: rgba(255, 168, 0, 0.6);
+  box-shadow: 0 16px 40px -24px var(--orange-glow);
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: calc(-2rem + 1px);
+  top: 1.85rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--orange);
+}
+
+.timelineItem.atual::before {
+  background: var(--orange);
+  box-shadow: 0 0 0 0 var(--orange-glow);
+  animation: pulso 2s infinite;
+}
+
+@keyframes pulso {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 168, 0, 0.6);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 168, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 168, 0, 0);
+  }
+}
+
+.timelineHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timelineCargo {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.timelineEmpresa {
+  margin-top: 0.25rem;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.timelineInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timelinePeriodo {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.timelineDescricao {
+  margin: 1rem 0 1.25rem 0;
+  padding-left: 1.1rem;
+  color: #d4d4d4;
+  line-height: 1.7;
+}
+
+.timelineDescricao li::marker {
+  color: var(--orange);
+}
+
+.timelineStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.timelineTag {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Registro de software */
+
+.patentes {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.patenteCard {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 168, 0, 0.5);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 168, 0, 0.14), transparent 50%),
+    var(--surface);
+}
+
+.patenteIcone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--orange);
+  color: #000000;
+  font-size: 28px;
+}
+
+.patenteNumero {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.patenteTitulo {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.patenteDescricao {
+  margin-top: 0.75rem;
+  color: #d4d4d4;
+  line-height: 1.7;
+}
+
+.patenteLink {
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineItem {
+    padding: 1.25rem;
+  }
+
+  .timelineItem::before {
+    left: calc(-1.5rem + 1px);
+  }
+
+  .timelineInfo {
+    align-items: flex-start;
+  }
+
+  .patenteCard {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+}

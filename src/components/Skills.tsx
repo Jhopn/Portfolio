@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import cssLogo from '../assets/Icons/Skills/css.webp';
 import htmlLogo from '../assets/Icons/Skills/html.webp';
 import sqlLogo from '../assets/Icons/Skills/mysql.webp';
@@ -24,6 +25,10 @@ import reactNativeLogo from '../assets/Icons/Skills/android-phone.webp';
 import firebaseLogo from '../assets/Icons/Skills/firebase.webp';
 import supabaseLogo from '../assets/Icons/Skills/supabase.webp';
 import nginxLogo from '../assets/Icons/Skills/nginx.webp';
+import vueLogo from '../assets/Icons/Skills/vue.svg';
+import djangoLogo from '../assets/Icons/Skills/django.svg';
+import iaLogo from '../assets/Icons/Skills/inteligencia-artificial.svg';
+import jenkinsLogo from '../assets/Icons/Skills/jenkins.svg';
 import '../styles/skills/skills.css';
 
 const logos = [
@@ -38,6 +43,7 @@ const logos = [
     { name: 'Python', logo: pythonLogo },
     { name: 'React', logo: reactLogo },
     { name: 'React Native', logo: reactNativeLogo },
+    { name: 'Vue', logo: vueLogo },
     { name: 'Next', logo: nextLogo },
     { name: 'Tailwind CSS', logo: tailwindLogo },
     { name: 'Material UI', logo: materiaUILogo },
@@ -46,24 +52,33 @@ const logos = [
     { name: 'PostgreSQL', logo: postgresLogo },
     { name: 'Prisma', logo: prismaLogo },
     { name: 'Spring Boot', logo: springLogo },
+    { name: 'Django', logo: djangoLogo },
     { name: 'Bootstrap', logo: bootstrapLogo },
     { name: 'Express', logo: expressLogo },
     { name: 'Nest', logo: nestLogo },
     { name: 'Adonis', logo: adonisLogo },
     { name: 'Firebase', logo: firebaseLogo },
     { name: 'Supabase', logo: supabaseLogo },
-    { name: 'Nginx', logo: nginxLogo }
+    { name: 'Nginx', logo: nginxLogo },
+    { name: 'Jenkins', logo: jenkinsLogo },
+    { name: 'Inteligência Artificial', logo: iaLogo }
 ];
 
 export function Skills() {
     return (
-        <>
+        <div className='skillsGrid'>
             {logos.map((img, index) => (
-                <div key={index} className='imgWrapper'>
-                    <img className='imgSkills' src={img.logo} alt={img.name} />
-                    <span className='tooltip'>{img.name}</span>
+                <div
+                    key={img.name}
+                    className='skillItem reveal'
+                    style={{ '--d': `${(index % 10) * 0.04}s` } as CSSProperties}
+                >
+                    <div className='skillIcone'>
+                        <img src={img.logo} alt="" />
+                    </div>
+                    <span className='skillNome'>{img.name}</span>
                 </div>
             ))}
-        </>
+        </div>
     );
 }

@@ -1,26 +1,91 @@
 .cardProjetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.cardProjetos > div {
+    height: 100%;
+}
+
+.projetosVazio {
+    text-align: center;
+    color: var(--muted);
+    padding: 4rem 1rem;
+}
+
+/* Carrossel da Home */
+
+.projetosSwiper .swiper {
+    padding: 0.5rem 0.25rem 1rem 0.25rem;
+    margin: -0.5rem -0.25rem 0 -0.25rem;
+}
+
+.projetosSwiper .swiper-slide {
+    height: auto;
+}
+
+.projetosSwiperControles {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
-.containerContent {
-    width: 30%;
-    margin: 0 auto;
+.projetosSwiperPaginacao {
+    flex: 1;
+    display: flex;
+    gap: 0.4rem;
 }
 
-@media (max-width: 450px) {
+.projetosSwiperPaginacao .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    border-radius: 999px;
+    background: #444444;
+    opacity: 1;
+    transition: width 0.3s var(--ease), background-color 0.3s;
+}
+
+.projetosSwiperPaginacao .swiper-pagination-bullet-active {
+    width: 28px;
+    background: var(--orange);
+}
+
+.projetosSwiperAnterior,
+.projetosSwiperProximo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.projetosSwiperAnterior:hover,
+.projetosSwiperProximo:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #000000;
+}
+
+.projetosSwiperAnterior.swiper-button-disabled,
+.projetosSwiperProximo.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: default;
+    background: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+@media (max-width: 400px) {
     .cardProjetos {
-        display: grid;
-        padding: 0.5rem;
-        justify-content: center;
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
-
-    .containerContent {
-        width: 63%;
-    }
-
 }
-

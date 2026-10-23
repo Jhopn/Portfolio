@@ -9,15 +9,15 @@ export function Wavify() {
   const calculateWaveParams = () => {
     if (isHovering) {
       return {
-        height: 30,
+        height: 40,
         amplitude: 12,
         speed: 0.40,
         points: 5,
       }
     } else {
       return {
-        height: 30,
-        amplitude: 50,
+        height: 40,
+        amplitude: 30,
         speed: 0.15,
         points: 4,
       }
